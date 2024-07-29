@@ -1,0 +1,59 @@
+# Node modules (if you're using Node.js)
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache directory
+.npm
+
+# Yarn
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.pnp.*
+.yarn/*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+jspm_packages/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Ignore the build output of various tools
+dist/
+build/
+out/
+
+# Ignore IDE directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore SASS cache files
+.sass-cache/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore temporary files
+*.tmp
+*.temp

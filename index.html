@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
+    <title>Asociace ProUA Jižní Čechy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="container-fluid  bg-white text-center px-0 ">
+        <div class="shadow container-fluid d-flex justify-content-between py-3 px-2 ">
+            <img src="ornament1.svg" alt="Asociace ProUA Jižní Čechy Logo" class="logo mx-1">
+            <h1 id="site-title" class="flex-grow-1 my-auto text-left px-1 fs-2">Asociace ProUA Jižní Čechy, z.s.</h1>
+
+            <nav class="navbar navbar-light bg-light px-0">
+                <div class="container justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item dropdown position-relative">
+                            <a class=" nav-link dropdown-toggle text-black" href="#" id="languageDropdown" role="button"
+                                aria-haspopup="menu" data-toggle="dropdown">CS</a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item px-2" href="#" data-lang="cs">Čeština</a>
+                                <a class="dropdown-item px-2" href="#" data-lang="en">English</a>
+                                <a class="dropdown-item px-2" href="#" data-lang="uk">Українська</a>
+                            </div>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+    <section class="py-1 px-lg-3 mx-0">
+        <div class="motto p-2 bg-white d-xl-flex">
+            <img src="images/flagInline.svg" alt="flag" class="flag ">
+            <div
+                class="d-flex flex-column bg-transparent justify-content-between justify-content-xl-around p-4 fst-italic">
+                <h2 class="association text-left">Pro UA</h2>
+                <h3 id="site-motto" class="fs-2 text-center p-0 mr-1">Єднаймося заради майбутнього</h2>
+            </div>
+
+        </div>
+    </section>
+    <section class="py-1 px-lg-3 mx-0">
+        <div class="container-fluid shadow p-4 bg-white">
+            <main id="main-content" class="main my-0 mx-auto pt-2 overflow-auto w-100">
+                <!-- Content will be loaded here based on language -->
+            </main>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <p id="footer-text">&copy; 2024 Asociace ProUA Jižní Čechy. </p>
+        <div class="social-icons mt-3">
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn text-white bg-dark" data-bs-toggle="modal" data-bs-target="#legalModal">
+            Výpis subjektu
+        </button>
+    </footer>
+    <!-- Modal -->
+    <div class="modal modal-fullscreen-md-down fade text-black" id="legalModal" tabindex="-1"
+        aria-labelledby="legalModalLabel" aria-hidden="true" role="dialog">
+        <!-- Modal inner part-->
+    </div>
+    <!-- Scripts for Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <!-- Main script-->
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>

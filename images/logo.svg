@@ -1,0 +1,33 @@
+<svg width="200" height="200"
+    xmlns="http://www.w3.org/2000/svg" style="background-color: #FAF3E0;">
+    <!-- Define cross stitch pattern -->
+    <defs>
+        <pattern id="cross-red" patternUnits="userSpaceOnUse" width="10" height="10">
+            <path d="M0,0 L10,10 M10,0 L0,10" stroke="red" stroke-width="1"/>
+        </pattern>
+        <pattern id="cross-black" patternUnits="userSpaceOnUse" width="10" height="10">
+            <path d="M0,0 L10,10 M10,0 L0,10" stroke="black" stroke-width="1"/>
+        </pattern>
+    </defs>
+
+    <!-- Central Red Cross Pattern -->
+    <rect x="70" y="70" width="60" height="60" fill="url(#cross-red)" />
+
+    <!-- Surrounding Black Cross Patterns -->
+    <rect x="40" y="40" width="20" height="20" fill="url(#cross-black)" />
+    <rect x="140" y="40" width="20" height="20" fill="url(#cross-black)" />
+    <rect x="40" y="140" width="20" height="20" fill="url(#cross-black)" />
+    <rect x="140" y="140" width="20" height="20" fill="url(#cross-black)" />
+
+    <!-- Connecting Black Lines -->
+    <rect x="40" y="90" width="20" height="20" fill="url(#cross-black)" />
+    <rect x="140" y="90" width="20" height="20" fill="url(#cross-black)" />
+    <rect x="90" y="40" width="20" height="20" fill="url(#cross-black)" />
+    <rect x="90" y="140" width="20" height="20" fill="url(#cross-black)" />
+
+    <!-- Diagonal Black Cross Patterns -->
+    <rect x="55" y="55" width="10" height="10" fill="url(#cross-black)" />
+    <rect x="135" y="55" width="10" height="10" fill="url(#cross-black)" />
+    <rect x="55" y="135" width="10" height="10" fill="url(#cross-black)" />
+    <rect x="135" y="135" width="10" height="10" fill="url(#cross-black)" />
+</svg>

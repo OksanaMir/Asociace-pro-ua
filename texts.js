@@ -27,7 +27,7 @@ export const content = {
 		},
 		legalAddress: {
 			header: 'Sídlo:',
-			body: '[Váši Adresa], České Budějovice 2, 370 11 České Budějovice, Česká republika'
+			body: '[Vaše Adresa], České Budějovice 2, 370 11 České Budějovice, Česká republika'
 		},
 		rights: 'Všechna práva vyhrazena.',
 		purpose: {
@@ -79,7 +79,7 @@ export const content = {
 			header: 'Kontaktujte nás',
 			address: {
 				header: 'Adresa',
-				body: ' [Váši Adresa], České Budějovice 2, 370 11 České Budějovice, Česká republika'
+				body: ' [Vaše Adresa], České Budějovice 2, 370 11 České Budějovice, Česká republika'
 			},
 			email: {
 				header: 'Email: ',
@@ -115,7 +115,7 @@ export const content = {
 		},
 		founded: {
 			header: 'Date of Establishment:',
-			body: '[Date]]'
+			body: '[Date]'
 		},
 		orgId: {
 			header: 'Identification Number: ',

@@ -1,25 +1,43 @@
 export const generateModal = (lang, data) => {
 	let content = '';
-	if (lang === 'en') {
+
+	if (lang === 'EN') {
 		content = data.en;
-	} else if (lang === 'uk') {
+	} else if (lang === 'UK') {
 		content = data.uk;
-	} else if (lang === 'cs') {
+	} else if (lang === 'CS') {
 		content = data.cs;
 	}
 
-	document.getElementById('legalModal').innerHTML = `
+	// Check for undefined properties and set default values if necessary
+	const modalContent = content?.modal || {};
+	const modalHeader1 =
+		modalContent.header1 ||
+		'Výpis subjektu Asociace ProUA Jižní Čechy, z.s.';
+	const modalHeader2 = modalContent.header2 || 'Výpis';
+	const modalHeader3 =
+		modalContent.header3 ||
+		'ze spolkového rejstříku, vedeného Krajským soudem v Českých Budějovicích';
+
+	// Check if the element exists before trying to modify it
+	const legalModalElement = document.getElementById('legalModal');
+	if (!legalModalElement) {
+		console.error('Element with id "legalModal" not found.');
+		return;
+	}
+
+	legalModalElement.innerHTML = `
     <div class="modal-dialog modal-xl .modal-dialog-centered modal-dialog-scrollable fs-4">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="legalModalLabel">${content.modal.header1}
+                <h1 class="modal-title fs-5" id="legalModalLabel">${modalHeader1}
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="container my-4 p-4 border rounded bg-light">
-                    <h2 class="mt-4">${content.modal.header2}</h2>
-                    <p>${content.modal.header3}<br>
+                    <h2 class="mt-4">${modalHeader2}</h2>
+                    <p>${modalHeader3}<br>
                         <strong>oddíl</strong>, vložka L 9426
                     </p>
                     <hr>

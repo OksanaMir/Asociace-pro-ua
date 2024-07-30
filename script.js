@@ -2,10 +2,8 @@ import { content } from './texts.js';
 import { generateModal } from './modal.js';
 import { generateContent } from './content.js';
 
-const texts = content;
-console.log(texts);
-
 document.addEventListener('DOMContentLoaded', () => {
+	const texts = content;
 	// const fetchContent = async () => {
 	// 	const response = await fetch('texts.json');
 	// 	const data = await response.json();
@@ -13,15 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	// 	return data;
 	// };
 
-	generateContent('cs', texts);
-	generateModal('cs', texts);
-
 	const languageSwitcher = document.querySelector(
 		'#languageDropdown + .dropdown-menu'
 	);
 	const langBtn = document.getElementById('languageDropdown');
 
-	// Function to detect screen type
 	const getScreenType = () => {
 		if (window.innerWidth < 600) return 'mobile';
 		if (window.innerWidth < 960) return 'tablet';
@@ -29,49 +23,42 @@ document.addEventListener('DOMContentLoaded', () => {
 		return 'desktop';
 	};
 
-	// Function to load content based on language
 	let langMode = '';
 	const loadContent = lang => {
-		langBtn.textContent = langMode;
-		if (lang === 'en') {
-			langMode = 'EN';
-			generateContent('en', texts);
-			generateModal('en', texts);
-		} else if (lang === 'uk') {
-			langMode = 'UK';
-			generateContent('uk', texts);
-			generateModal('uk', texts);
-		} else {
-			langMode = 'CS';
-			generateContent('cs', texts);
-			generateModal('cs', texts);
+		switch (lang) {
+			case 'en':
+				langMode = 'EN';
+				break;
+			case 'uk':
+				langMode = 'UK';
+				break;
+			default:
+				langMode = 'CS';
+				break;
 		}
 		langBtn.textContent = langMode;
+		generateContent(langMode, texts);
+		generateModal(langMode, texts);
 
-		// Clear current content
+		// Clear current active class
+		document
+			.querySelectorAll('#languageDropdown + .dropdown-menu a')
+			.forEach(link => link.classList.remove('active'));
 
-		// Load the appropriate content file
-		// 	fetch(`content-${lang}.js`)
-		// 		.then(response => response.text())
-		// 		.then(script => {
-		// 			const newScript = document.createElement('script');
-		// 			newScript.textContent = script;
-		// 			document.body.appendChild(newScript);
-		// 			document.body.removeChild(newScript);
-		// 		});
+		// Set the active class to the selected language
+		document
+			.querySelector(
+				`#languageDropdown + .dropdown-menu a[data-lang="${lang}"]`
+			)
+			.classList.add('active');
 	};
 
-	// Language switcher event
 	languageSwitcher.addEventListener('click', e => {
 		e.preventDefault();
 		if (e.target.tagName === 'A') {
 			const lang = e.target.getAttribute('data-lang');
-			console.log(lang);
+			// console.log(lang);
 			loadContent(lang);
-			document
-				.querySelectorAll('#languageDropdown + .dropdown-menu a')
-				.forEach(link => link.classList.remove('active'));
-			e.target.classList.add('active');
 		}
 	});
 
@@ -82,6 +69,5 @@ document.addEventListener('DOMContentLoaded', () => {
 			?.getAttribute('data-lang') || 'cs';
 	loadContent(initialLang);
 
-	// Detect screen type
 	console.log(`Current screen type: ${getScreenType()}`);
 });

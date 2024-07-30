@@ -1,11 +1,18 @@
 export const generateContent = (lang, data) => {
 	let content = '';
-	if (lang === 'en') {
+	if (lang === 'EN') {
 		content = data.en;
-	} else if (lang === 'uk') {
+	} else if (lang === 'UK') {
 		content = data.uk;
-	} else if (lang === 'cs') {
+	} else if (lang === 'CS') {
 		content = data.cs;
+	}
+
+	console.log('Content for', lang, content);
+
+	if (!content || !content.name || !content.name.body) {
+		console.error('Invalid content structure:', content);
+		return;
 	}
 
 	document.getElementById('site-title').innerText = content.name.body;

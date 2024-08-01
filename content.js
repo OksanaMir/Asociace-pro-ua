@@ -1,15 +1,4 @@
-export const generateMainContentHTML = (lang, data) => {
-	let content = '';
-	if (lang === 'en') {
-		content = data.en;
-	} else if (lang === 'uk') {
-		content = data.uk;
-	} else if (lang === 'cs') {
-		content = data.cs;
-	}
-
-	console.log('Content for', lang, content);
-
+export const generateMainContentHTML = content => {
 	if (!content || !content.name || !content.name.body) {
 		console.error('Invalid content structure:', content);
 		return;

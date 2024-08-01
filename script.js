@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
 				break;
 		}
 		langBtn.textContent = langMode;
-		generateMainContentHTML(langMode, data);
-		generateModalHTML(langMode, data);
+		generateMainContentHTML(data[langMode]);
+		generateModalHTML(data[langMode]);
 
 		// Clear current active class
 		document

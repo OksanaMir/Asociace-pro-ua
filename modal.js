@@ -1,14 +1,4 @@
-export const generateModalHTML = (lang, data) => {
-	let content = '';
-
-	if (lang === 'en') {
-		content = data.en;
-	} else if (lang === 'uk') {
-		content = data.uk;
-	} else if (lang === 'cs') {
-		content = data.cs;
-	}
-
+export const generateModalHTML = content => {
 	// Check for undefined properties and set default values if necessary
 	const modalContent = content?.modal || {};
 	const modalHeader1 =

@@ -4,9 +4,9 @@ import { generateMainContentHTML } from './content.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 	const data = content;
-	const LANG_EN = 'EN';
-	const LANG_UK = 'UK';
-	const LANG_CS = 'CS';
+	const LANG_EN = 'en';
+	const LANG_UK = 'uk';
+	const LANG_CS = 'cs';
 	// const fetchContent = async () => {
 	// 	const response = await fetch('texts.json');
 	// 	const data = await response.json();
@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		console.log(content);
 
 		switch (lang) {
-			case 'en':
+			case LANG_EN:
 				langMode = LANG_EN;
 				break;
-			case 'uk':
+			case LANG_UK:
 				langMode = LANG_UK;
 				break;
 			default:

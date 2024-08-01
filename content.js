@@ -1,10 +1,10 @@
 export const generateMainContentHTML = (lang, data) => {
 	let content = '';
-	if (lang === 'EN') {
+	if (lang === 'en') {
 		content = data.en;
-	} else if (lang === 'UK') {
+	} else if (lang === 'uk') {
 		content = data.uk;
-	} else if (lang === 'CS') {
+	} else if (lang === 'cs') {
 		content = data.cs;
 	}
 

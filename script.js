@@ -1,9 +1,12 @@
 import { content } from './texts.js';
-import { generateModal } from './modal.js';
-import { generateContent } from './content.js';
+import { generateModalHTML } from './modal.js';
+import { generateMainContentHTML } from './content.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-	const texts = content;
+	const data = content;
+	const LANG_EN = 'EN';
+	const LANG_UK = 'UK';
+	const LANG_CS = 'CS';
 	// const fetchContent = async () => {
 	// 	const response = await fetch('texts.json');
 	// 	const data = await response.json();
@@ -24,21 +27,29 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 
 	let langMode = '';
+
 	const loadContent = lang => {
+		let content = data[lang];
+		if (!content) {
+			console.error(`Content for language ${lang} is not available.`);
+			return;
+		}
+		console.log(content);
+
 		switch (lang) {
 			case 'en':
-				langMode = 'EN';
+				langMode = LANG_EN;
 				break;
 			case 'uk':
-				langMode = 'UK';
+				langMode = LANG_UK;
 				break;
 			default:
-				langMode = 'CS';
+				langMode = LANG_CS;
 				break;
 		}
 		langBtn.textContent = langMode;
-		generateContent(langMode, texts);
-		generateModal(langMode, texts);
+		generateMainContentHTML(langMode, data);
+		generateModalHTML(langMode, data);
 
 		// Clear current active class
 		document
@@ -66,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const initialLang =
 		document
 			.querySelector('#languageDropdown + .dropdown-menu a.active')
-			?.getAttribute('data-lang') || 'cs';
+			?.getAttribute('data-lang') || LANG_CS;
 	loadContent(initialLang);
 
 	console.log(`Current screen type: ${getScreenType()}`);

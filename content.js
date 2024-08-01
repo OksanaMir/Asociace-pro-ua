@@ -1,4 +1,4 @@
-export const generateContent = (lang, data) => {
+export const generateMainContentHTML = (lang, data) => {
 	let content = '';
 	if (lang === 'EN') {
 		content = data.en;
@@ -20,6 +20,7 @@ export const generateContent = (lang, data) => {
 	document.getElementById(
 		'footer-text'
 	).innerText = `\u00A9 2024 Asociace ProUA Jižní Čechy. ${content.rights}`;
+
 	let mainElm = document.getElementById('main-content');
 
 	mainElm.innerHTML = `
@@ -37,14 +38,14 @@ export const generateContent = (lang, data) => {
 	<section class="mission mb-4 overflow-auto">
 		<h2>${content.subjectBrief.header}</h2>
          <img src="images/before-speech.jpeg" alt="Before the Speech" class="float-lg-left w-50 mx-1 p-4">
-		<ul mx-auto p-4>
-			${content.subjectBrief.list.map(item => `<li>${item}</li>`).join('')}
+		<ul class="list-unstyled" mx-auto p-4">
+			${content.subjectBrief.list.map(item => `<li class="">${item}</li>`).join('')}
 		</ul>
 	</section>
 	<section class="activities mb-4">
 		<h2>${content.activities.header}</h2>
-		<ul mx-auto p-2>
-			${content.activities.list.map(item => `<li>${item}</li>`).join('')}
+		<ul class="list-unstyled" mx-auto p-2">
+			${content.activities.list.map(item => `<li class="">${item}</li>`).join('')}
 		</ul>
         <div class="container carouselOuter">
             <div id="carouselExampleControlsNoTouching" class="photobox carousel slide" data-bs-touch="false">
@@ -91,17 +92,17 @@ export const generateContent = (lang, data) => {
 	}
         </p>
 		<p><strong>${content.contacts.social}</strong></p>
-		<ul mx-auto p-2>
-			<li><a href="[Facebook Link]">Facebook</a></li>
-			<li><a href="[Twitter Link]">Twitter</a></li>
-			<li><a href="[LinkedIn Link]">LinkedIn</a></li>
+		<ul class="list-unstyled" mx-auto p-2">
+			<li><a class="link-secondary link-underline-light" href="[Facebook Link]">Facebook</a></li>
+			<li><a class="link-secondary link-underline-light" href="[Twitter Link]">Twitter</a></li>
+			<li><a class="link-secondary link-underline-light" href="[LinkedIn Link]">LinkedIn</a></li>
 		</ul>
 	</section>
 	<section class="legal mb-4">
 		<h2>${content.legalInfo.header}</h2>
 		<p>${
 			content.legalInfo.body
-		} <a href="http://www.justice.cz" target="_blank">http://www.justice.cz</a>.</p>
+		} <a class="link-info link-underline-light" href="http://www.justice.cz" target="_blank">http://www.justice.cz</a>.</p>
 	</section>
 	<!-- Other sections as needed -->
 	`;

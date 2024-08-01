@@ -1,4 +1,4 @@
-export const generateModal = (lang, data) => {
+export const generateModalHTML = (lang, data) => {
 	let content = '';
 
 	if (lang === 'EN') {
@@ -27,11 +27,10 @@ export const generateModal = (lang, data) => {
 	}
 
 	legalModalElement.innerHTML = `
-    <div class="modal-dialog modal-xl .modal-dialog-centered modal-dialog-scrollable fs-4">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable fs-4">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="legalModalLabel">${modalHeader1}
-                </h1>
+                <h1 class="modal-title fs-5" id="legalModalLabel">${modalHeader1}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -124,6 +123,5 @@ export const generateModal = (lang, data) => {
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
-    </div>
-    `;
+    </div>    `;
 };

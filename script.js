@@ -3,28 +3,33 @@ import { generateModalHTML } from './modal.js';
 import { generateMainContentHTML } from './content.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-	const data = content;
-	const LANG_EN = 'en';
-	const LANG_UK = 'uk';
-	const LANG_CS = 'cs';
-	// const fetchContent = async () => {
-	// 	const response = await fetch('texts.json');
-	// 	const data = await response.json();
-	// 	console.log(data);
-	// 	return data;
-	// };
-
-	const languageSwitcher = document.querySelector(
-		'#languageDropdown + .dropdown-menu'
-	);
-	const langBtn = document.getElementById('languageDropdown');
-
 	const getScreenType = () => {
 		if (window.innerWidth < 600) return 'mobile';
 		if (window.innerWidth < 960) return 'tablet';
 		if (window.innerWidth < 1280) return 'laptop';
 		return 'desktop';
 	};
+
+	const data = content;
+	const LANG_EN = 'en';
+	const LANG_UK = 'uk';
+	const LANG_CS = 'cs';
+
+	const mainElm = document.getElementById('main-content');
+	const siteTitleElm = document.getElementById('site-title');
+	const footerTexrElm = document.getElementById('footer-text');
+	const legalModalElement = document.getElementById('legalModal');
+
+	// Check if the element exists before trying to modify it
+	if (!legalModalElement) {
+		console.error('Element with id "legalModal" not found.');
+		return;
+	}
+
+	const languageSwitcher = document.querySelector(
+		'#languageDropdown + .dropdown-menu'
+	);
+	const langBtn = document.getElementById('languageDropdown');
 
 	let langMode = '';
 
@@ -47,9 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
 				langMode = LANG_CS;
 				break;
 		}
+
 		langBtn.textContent = langMode;
-		generateMainContentHTML(data[langMode]);
-		generateModalHTML(data[langMode]);
+
+		siteTitleElm.innerText = content.name.body;
+		footerTexrElm.innerText = `\u00A9 2024 Asociace ProUA Jižní Čechy. ${content.rights}`;
+
+		mainElm.innerHTML = generateMainContentHTML(data[langMode]);
+		legalModalElement.innerHTML = generateModalHTML(data[langMode]);
 
 		// Clear current active class
 		document

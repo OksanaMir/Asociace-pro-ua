@@ -9,14 +9,7 @@ export const generateModalHTML = content => {
 		modalContent.header3 ||
 		'ze spolkového rejstříku, vedeného Krajským soudem v Českých Budějovicích';
 
-	// Check if the element exists before trying to modify it
-	const legalModalElement = document.getElementById('legalModal');
-	if (!legalModalElement) {
-		console.error('Element with id "legalModal" not found.');
-		return;
-	}
-
-	legalModalElement.innerHTML = `
+	return `
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable fs-4">
         <div class="modal-content">
             <div class="modal-header">

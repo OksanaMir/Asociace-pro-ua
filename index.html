@@ -57,6 +57,7 @@
         </script>
     <!-- <title>Asociace ProUA Jižní Čechy</title> -->
     <title>Asociace ProUA Jižní Čechy, z.s. - Support and Coordination for Ukrainian Communities</title>
+
     <!-- Favicon Links -->
     <link rel="icon" href="ornament.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="180x180" href="pro-ua-favicons/apple-touch-icon.png">
@@ -64,6 +65,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="pro-ua-favicons/favicon-16x16.png">
     <link rel="manifest" href="pro-ua-favicons/site.webmanifest">
     <link rel="shortcut icon" href="pro-ua-favicons/favicon.ico" type="image/x-icon">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -73,17 +75,23 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <header class="container-fluid  bg-white text-center px-0 ">
-        <div class="shadow container-fluid d-flex justify-content-between py-3 px-2 ">
+        <div class="shadow  container-fluid d-flex justify-content-between py-3 px-2 ">
             <img src="ornament.svg" alt="Asociace ProUA Jižní Čechy Logo" class="logo mx-1">
-            <h1 id="site-title" class="flex-grow-1 my-auto text-left px-1 fs-2">Asociace ProUA Jižní Čechy, z.s.</h1>
 
-            <nav class="navbar navbar-light bg-light px-0">
+            <h1 id="site-title" class=" flex-grow-1 my-auto me-2 text-left px-1 py-5 fs-2 ">Asociace ProUA
+                Jižní
+                Čechy,
+                z.s.
+            </h1>
+
+            <nav class="navbar navbar-light bg-white px-0">
                 <div class="container justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
 
@@ -103,24 +111,13 @@
         </div>
 
     </header>
-    <section class="py-1 px-lg-3 mx-0">
-        <div class="motto p-2 bg-white d-xl-flex">
-            <img src="images/flagInline.svg" alt="flag" class="flag ">
-            <div
-                class="d-flex flex-column bg-transparent justify-content-between justify-content-xl-around p-4 fst-italic">
-                <h2 class="association text-left">Pro UA</h2>
-                <h3 id="site-motto" class="fs-2 text-center p-0 mr-1">Єднаймося заради майбутнього</h2>
-            </div>
-        </div>
-    </section>
-    <section class="py-1 px-lg-3 mx-0">
-        <div class="container-fluid shadow p-4 bg-white">
-            <main id="main-content" class="main my-0 mx-auto pt-2 overflow-auto w-100">
-                <!-- Content will be loaded here based on language -->
-            </main>
-        </div>
-    </section>
-    <footer class="bg-dark text-white text-center py-3">
+
+    <main id="main-content" class="main container-fluid shadow bg-white mt-2 mx-auto px-0">
+
+        <!-- Content will be loaded here based on language -->
+    </main>
+
+    <div class="footer navbar-fixed-bottom bg-dark text-white text-center py-3">
         <p id="footer-text">&copy; 2024 Asociace ProUA Jižní Čechy. </p>
         <div class="social-icons mt-3">
             <a href="URL_TO_FACEBOOK_PROFILE" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
@@ -133,12 +130,13 @@
         <button type="button" class="btn text-white bg-dark" data-bs-toggle="modal" data-bs-target="#legalModal">
             Výpis subjektu
         </button>
-    </footer>
+    </div>
     <!-- Modal -->
     <div class="modal modal-fullscreen-md-down fade text-black" id="legalModal" tabindex="-1"
         aria-labelledby="legalModalLabel" aria-hidden="true" role="dialog">
         <!-- Modal inner part-->
     </div>
+
     <!-- Scripts for Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

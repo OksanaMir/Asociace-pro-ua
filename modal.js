@@ -8,7 +8,7 @@ export const generateModalHTML = content => {
 	const modalHeader3 =
 		modalContent.header3 ||
 		'ze spolkového rejstříku, vedeného Krajským soudem v Českých Budějovicích';
-
+	// TODO decide which content to use. Then use content variables
 	return `
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable fs-4">
         <div class="modal-content">

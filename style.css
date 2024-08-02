@@ -3,7 +3,7 @@
 	--font-size: 1.3rem;
 	--bg-color: #f4f4f4;
 	--text-color: #333;
-	--header-color: rgb(32, 18, 32);
+	/* --header-color: rgb(32, 18, 32); */
 }
 
 html {
@@ -17,12 +17,20 @@ html {
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 300;
+	font-optical-sizing: auto;
+	font-style: normal;
 	font-size: var(--font-size);
 	background-color: var(--bg-color);
 	color: var(--text-color);
 	padding: 0;
 	margin: 0;
+}
+.pangolin-regular {
+	font-family: 'Pangolin', cursive;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .logo {
@@ -43,33 +51,7 @@ body {
 	background-size: cover;
 	height: 600px;
 	color: aliceblue;
-	/* box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3); */
 }
-/* .withBG {
-	background: url(images/flagInline.svg);
-	background-repeat: no-repeat;
-	background-position: right center;
-	background-size: 100%;
-} */
-/* .flag {
-	width: 30%;
-	height: 6em;
-} */
-
-/* .association {
-	font-size: 4rem;
-} */
-
-/* .mottoBg {
-	height: 100%;
-	width: 60%;
-	float: left;
-	flex-shrink: 0;
-	background-image: url(images/flagNew.svg);
-	background-position: center 60%;
-	background-repeat: no-repeat;
-	background-size: cover;
-} */
 
 .dropdown .show {
 	position: absolute;
@@ -85,13 +67,15 @@ body {
 	white-space: nowrap;
 }
 
-/* .photo {
-	height: 500px;
-	float: left;
-	padding: 30px;
-} */
 section {
 	margin: 30px;
+}
+h2::before {
+	content: 'm';
+	font-family: 'Yarndings 12', system-ui;
+	font-weight: 400;
+	font-style: normal;
+	margin-right: 5px;
 }
 
 .carouselOuter {

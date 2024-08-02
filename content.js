@@ -7,7 +7,7 @@ export const generateMainContentHTML = content => {
 	return `
 	<section class="mb-4 mx-0 ">
         <div class="motto bg-white d-xl-flex ">
-            <div class="d-lg-flex flex-column p-4 fst-italic w-50">
+            <div class="d-lg-flex flex-column p-4 fst-italic w-50 pangolin-regular">
                 <h2 class="display-3 fw-bold lh-2 text-left ms-xl-5">Pro UA</h2>
                 <h3 id="site-motto" class=" display-5 lh-2 text-right p-0 me-xl-5 ">${
 					content.motto
@@ -122,7 +122,7 @@ export const generateMainContentHTML = content => {
 		</ul>
 	</section>
 	<section class="legal mb-4 p-4">
-		<h2 class="display-4 display-3 mb2">${content.legalInfo.header}</h2>
+		<h2 class="display-4 fw-bold lh-2 mb-3">${content.legalInfo.header}</h2>
 		<p>${
 			content.legalInfo.body
 		} <a class="link-info link-underline-light" href="http://www.justice.cz" target="_blank">http://www.justice.cz</a>.</p>

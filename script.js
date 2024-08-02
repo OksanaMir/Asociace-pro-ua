@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		e.preventDefault();
 		if (e.target.tagName === 'A') {
 			const lang = e.target.getAttribute('data-lang');
-			// console.log(lang);
 			loadContent(lang);
 		}
 	});

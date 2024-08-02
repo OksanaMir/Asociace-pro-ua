@@ -1,9 +1,12 @@
 /* General Styles */
 :root {
 	--font-size: 1.3rem;
-	--bg-color: #f4f4f4;
+	/* --bg-color: #f4f4f4; */
+	--bg-color: #37b7c3;
 	--text-color: #333;
-	/* --header-color: rgb(32, 18, 32); */
+	--footer-color: #088395;
+	--font-color: #071952;
+	--bs--header-font-color: #071952;
 }
 
 html {
@@ -87,12 +90,19 @@ body {
 section {
 	margin: 30px;
 }
+.color-custom {
+	color: var(--font-color) !important;
+}
+.dark-bg-custom {
+	background-color: var(--footer-color);
+}
 h2::before {
 	content: 'm';
 	font-family: 'Yarndings 12', system-ui;
 	font-weight: 400;
 	font-style: normal;
 	margin-right: 5px;
+	color: red;
 }
 
 .carouselOuter {

@@ -15,8 +15,8 @@ export const generateMainContentHTML = content => {
             </div>
         </div>
     </section>
-	<section class="about mb-4 p-4">
-		<h2 class="display-4 fw-bold lh-2 mb-3">${content.about}</h2>
+	<section id="about" class="about mb-4 p-4 ">
+		<h2 class="display-4 fw-bold lh-2 mb-3 color-custom">${content.about}</h2>
 		<div class="row flex-lg-row align-items-center g-5 py-5">
 			<div class="col-10 col-sm-8 col-lg-6 ">
 				<img src="images/spolek-with-flag.jpeg" class="d-block mx-lg-auto img-fluid" alt="Members with the flag" width="700"
@@ -33,7 +33,7 @@ export const generateMainContentHTML = content => {
     	</div>
 	</section>
 	
-	<section class="mission mb-4 p-4">
+	<section id="mission" class="mission mb-4 p-4 color-custom">
 		<h2 class="display-4 fw-bold lh-2 mb-3 ">${content.subjectBrief.header}</h2>
 		<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 			<div class="col-10 col-sm-8 col-lg-6">
@@ -51,7 +51,7 @@ export const generateMainContentHTML = content => {
 				</ul>
     	</div>
 	</section>
-	<section class="activities mb-4">
+	<section id="activities" class="activities mb-4 color-custom">
 		<h2 class="display-3 mb-2 text-center">${content.activities.header}</h2>
 		<ul class="list-unstyled mx-auto p-2">
 			<li>
@@ -96,7 +96,7 @@ export const generateMainContentHTML = content => {
 			</div>
 		</div>
 	</section>
-	<section class="contact mb-4 p-4">
+	<section id="contact" class="contact mb-4 p-4 color-custom">
 		<h2 class="display-3 mb-2">${content.contacts.header}</h2>
 		<p><strong>${content.contacts.address.header}:</strong> ${
 		content.contacts.address.body
@@ -121,7 +121,7 @@ export const generateMainContentHTML = content => {
 			</li>
 		</ul>
 	</section>
-	<section class="legal mb-4 p-4">
+	<section id="legal" class="legal mb-4 p-4 color-custom">
 		<h2 class="display-4 fw-bold lh-2 mb-3">${content.legalInfo.header}</h2>
 		<p>${
 			content.legalInfo.body

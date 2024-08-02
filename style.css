@@ -53,9 +53,26 @@ body {
 	color: aliceblue;
 }
 
-.dropdown .show {
-	position: absolute;
+/* Custom styles for dropdown menu */
+.nav-item .dropdown-menu {
+	top: 100%; /* Position the dropdown menu below the button */
+	left: -150%; /* Align the dropdown menu to the left */
+	right: 0;
+	transform: translateY(0); /* Ensure there's no additional offset */
+	will-change: transform; /* Optimize performance */
 }
+
+/* Ensure dropdown doesn't affect page layout when shown */
+.nav-item .dropdown-menu.show {
+	display: block;
+	position: absolute; /* Absolute positioning within the .nav-item context */
+	float: none; /* Disable float */
+	min-width: max-content; /* Ensure it doesn’t push other content by auto-sizing */
+}
+/* .dropdown .show {
+	position: absolute;
+} */
+
 .dropdown-menu {
 	max-width: fit-content;
 	background-color: #ffffffb0;

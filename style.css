@@ -47,6 +47,9 @@ body {
 .shadow {
 	box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
 }
+.bg-shadow-lg {
+	box-shadow: 0 1rem 3rem rgba(black, 0.175);
+}
 
 .motto {
 	background-image: url(images/conference3.jpeg);
@@ -119,6 +122,10 @@ h2::before {
 	height: 700px;
 	object-fit: cover; /* Ensures the image covers the container */
 	object-position: center center;
+}
+.main {
+	position: relative;
+	top: -35px;
 }
 
 /* Responsive Design */

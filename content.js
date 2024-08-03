@@ -41,7 +41,7 @@ export const generateMainContentHTML = content => {
 				.map(
 					item =>
 						`<p>
-					<strong>${item.header}</strong> ${item.body}
+					<strong>${item.header}: </strong> ${item.body}
 				</p>`
 				)
 				.join('')}
@@ -120,24 +120,28 @@ export const generateMainContentHTML = content => {
 		'contact',
 		content.contacts.header,
 		`
-			<p><strong>${content.contacts.address.header}:</strong> ${
+			<p><strong>${content.contacts.address.header}: </strong> ${
 			content.contacts.address.body
 		}
 			</p>
-			<p><strong>${content.contacts.email.header}</strong> ${
+			<p><strong>${content.contacts.email.header}: </strong> ${
 			content.contacts.email.body
 		}
 			</p>
-			<p><strong>${content.contacts.phone.header}</strong> ${
+			<p><strong>${content.contacts.phone.header}: </strong> ${
 			content.contacts.phone.body
 		}
 			</p>
-			<p><strong>${content.contacts.social}</strong></p>
+			<p><strong>${content.contacts.social}: </strong></p>
 			<ul class="list-unstyled" mx-auto p-2">
 				<li>
 					<ul>
 						${createListItems(
 							[
+								{
+									socName: 'Instagram',
+									href: 'https://www.instagram.com/zenskyj_klub?igsh=amp6Z3pnenJybjNo&utm_source=qr'
+								},
 								{
 									socName: 'Facebook',
 									href: '[Facebook Link]'

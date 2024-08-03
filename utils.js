@@ -10,6 +10,21 @@ export const createSection = (id, title, content, additionalClasses = '') => `
     ${content}
   </section>
 `;
+
 export const createImage = (src, alt, width, height) => `
   <img src="${src}" class="d-block mx-lg-auto img-fluid" alt="${alt}" width="${width}" height="${height}" loading="lazy">
 `;
+
+export const createModalSections = contents =>
+	contents
+		.map(
+			content =>
+				`<h3 class="mt-4">${content.header}: </h3> ${
+					Array.isArray(content.body)
+						? content.body
+								.map(paragraph => `<p>${paragraph}</p><hr>`)
+								.join('')
+						: `<p>${content.body}</p><hr>`
+				}`
+		)
+		.join('');

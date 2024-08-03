@@ -10,24 +10,40 @@ export const content = {
 		motto: 'Spojme se pro budoucnost!',
 		about: 'O nás',
 		name: {
-			header: 'Název:',
+			header: 'Název',
 			body: 'Asociace ProUA Jižní Čechy, z.s.'
 		},
 		legal: {
-			header: 'Právní forma:',
+			header: 'Právní forma',
 			body: 'Spolek'
 		},
 		founded: {
-			header: 'Datum vzniku:',
+			header: 'Datum vzniku',
+			body: '[Datum]'
+		},
+		foundationDate: {
+			header: 'Datum vzniku a zápisu',
 			body: '[Datum]'
 		},
 		orgId: {
-			header: 'Identifikační číslo:',
+			header: 'Identifikační číslo',
 			body: '216 57 394'
 		},
 		legalAddress: {
-			header: 'Sídlo:',
-			body: '[Vaše Adresa], České Budějovice 2, 370 11 České Budějovice, Česká republika'
+			header: 'Sídlo',
+			body: `[Adresa], České Budějovice 2, 370 11 České Budějovice`
+		},
+		highAuth: {
+			header: 'Název nejvyššího orgánu',
+			body: 'Valné shromáždění'
+		},
+		statBody: {
+			header: 'Statutární orgán - Předseda',
+			body: ''
+		},
+		chairman: {
+			header: 'Předseda',
+			body: `Mgr. VALERIJA JURIJIVNA ZABELINA, Ph.D., dat. nar. [Datum],br>[Adresa], České Budějovice 2, 370 11 České Budějovice<br>Den vzniku funkce: [datum]`
 		},
 		rights: 'Všechna práva vyhrazena.',
 		purpose: {
@@ -42,16 +58,16 @@ export const content = {
 		subject: {
 			header: 'Předmět činnosti',
 			body: [
-				'Asistence při společné účasti v grantových výzvách ',
 				'Koordinace aktivit ukrajinských iniciativ v Jihočeském kraji a vytvoření platformy pro jejich sdružování, podpora synergie aktivit napříč Jihočeským krajem ',
+				'Podpora spolupráce členských organizací na společných akcích, sdílení prostor, odborných pracovníků a prostředků, zprostředkování výměny zkušeností mezi členy ',
+				'Zastřešení členů Asociace, zejména v právní a ekonomické oblasti, poskytování relevantních informací v měnícím se prostředí a právní úpravě česko-ukrajinských vztahů ',
+				'Asistence při společné účasti v grantových výzvách ',
+				'Vzdělávání: přednáškové a vzdělávací akce, kurzy a konference, zejména související s integrací do české společnosti, edukací o ukrajinské historii a tradicích, výchovou a osobnostním rozvojem lidí a zvyšováním jejich zaměstnatelnosti. příprava a další vzdělávání dobrovolníků a dalších osob',
+				'Spolupráce s obdobnými organizacemi v České republice i Evropě ',
 				'Mezinárodní aktivity: získávání a sdílení zkušeností, koordinace a účast na společných akcích na mezinárodní úrovni ',
 				'Ostatní: zájmové aktivity. jednorázové, prázdninové a víkendové akce. spolupráce s organizacemi a institucemi v ČR i v zahraničí tak, aby byl naplněn účel Asociace. publikační činnost. tvorba audiovizuálních děl. podílení se na vytváření státní politiky ve výše uvedených oblastech  ',
-				'Podpora spolupráce členských organizací na společných akcích, sdílení prostor, odborných pracovníků a prostředků, zprostředkování výměny zkušeností mezi členy ',
 				'Rozvoj dobrovolnictví: vyhledávání, výběr a evidence dobrovolníků, jejich příprava, doprovázení v dobrovolné službě a nabídka navazujících aktivit. podpora rozvoje dobrovolnictví u dalších organizací ',
-				'Rozvojová a humanitární pomoc: rozvojová spolupráce, rozvojové vzdělávání. humanitární pomoc zaměřená především na místa a oblasti postižené válečným konfliktem na Ukrajině ',
-				'Spolupráce s obdobnými organizacemi v České republice i Evropě ',
-				'Vzdělávání: přednáškové a vzdělávací akce, kurzy a konference, zejména související s integrací do české společnosti, edukací o ukrajinské historii a tradicích, výchovou a osobnostním rozvojem lidí a zvyšováním jejich zaměstnatelnosti. příprava a další vzdělávání dobrovolníků a dalších osob',
-				'Zastřešení členů Asociace, zejména v právní a ekonomické oblasti, poskytování relevantních informací v měnícím se prostředí a právní úpravě česko-ukrajinských vztahů '
+				'Rozvojová a humanitární pomoc: rozvojová spolupráce, rozvojové vzdělávání. humanitární pomoc zaměřená především na místa a oblasti postižené válečným konfliktem na Ukrajině '
 			]
 		},
 		subjectBrief: {
@@ -79,17 +95,17 @@ export const content = {
 			header: 'Kontaktujte nás',
 			address: {
 				header: 'Adresa',
-				body: ' [Vaše Adresa], České Budějovice 2, 370 11 České Budějovice, Česká republika'
+				body: ' [Adresa], České Budějovice 2, 370 11 České Budějovice, Česká republika'
 			},
 			email: {
-				header: 'Email: ',
+				header: 'Email',
 				body: '[Váš email]'
 			},
 			phone: {
-				header: 'Telefon: ',
-				body: '[Vaše telefonní číslo]'
+				header: 'Telefon',
+				body: '[Telefonní číslo]'
 			},
-			social: 'Sledujte nás: '
+			social: 'Sledujte nás'
 		},
 		legalInfo: {
 			header: 'Právní informace',
@@ -106,24 +122,40 @@ export const content = {
 				'from the association register, maintained by the Regional Court in České Budějovice'
 		},
 		name: {
-			header: 'Name:',
+			header: 'Name',
 			body: 'Asociace ProUA Jižní Čechy, z.s.'
 		},
 		legal: {
-			header: 'Legal Form:',
+			header: 'Legal Form',
 			body: 'Association'
 		},
 		founded: {
-			header: 'Date of Establishment:',
+			header: 'Date of Establishment',
+			body: '[Date]'
+		},
+		foundationDate: {
+			header: 'Date of Establishment and Registration',
 			body: '[Date]'
 		},
 		orgId: {
-			header: 'Identification Number: ',
+			header: 'Identification Number',
 			body: '216 57 394'
 		},
 		legalAddress: {
-			header: 'Legal Address:',
-			body: ' [Your address], České Budějovice 2, 370 11 České Budějovice, Česká republika'
+			header: 'Registered Office',
+			body: ' [Address], České Budějovice 2, 370 11 České Budějovice'
+		},
+		highAuth: {
+			header: 'Name of the Highest Authority',
+			body: 'General Assembly'
+		},
+		statBody: {
+			header: 'Statutory Body - Chairman',
+			body: ''
+		},
+		chairman: {
+			header: 'Chairman',
+			body: `Mgr. VALERIYA JURIJIVNA ZABELINA, Ph.D, date of Birth: [Date]<br>[Address], České Budějovice 2, 370 11 České Budějovice`
 		},
 		rights: 'All rights reserved.',
 		about: 'About us',
@@ -139,16 +171,16 @@ export const content = {
 		subject: {
 			header: 'Subject of Activity',
 			body: [
-				'Assistance in joint participation in grant calls ',
 				'Coordination of activities of Ukrainian initiatives in the South Bohemian Region and creation of a platform for their association, support of synergy of activities across the South Bohemian Region ',
-				'International activities: obtaining and sharing experiences, coordination, and participation in joint events at the international level ',
-				'Other: interest activities, one-time, holiday, and weekend events. cooperation with organizations and institutions in the Czech Republic and abroad to fulfill the purpose of the Association. publishing activities. creation of audiovisual works. participation in the creation of state policy in the above-mentioned areas  ',
 				'Support for cooperation among member organizations in joint events, sharing of spaces, specialists, and resources, facilitating the exchange of experiences among members ',
-				'Development of volunteering: recruitment, selection, and record-keeping of volunteers, their preparation, accompaniment in voluntary service, and offering of follow-up activities. support for the development of volunteering in other organizations ',
-				'Development and humanitarian aid: development cooperation, development education. humanitarian aid focused primarily on places and areas affected by the military conflict in Ukraine ',
-				'Cooperation with similar organizations in the Czech Republic and Europe ',
+				'Protection of the interests of Association members, especially in the legal and economic fields, providing relevant information in a changing environment and legal regulation of Czech-Ukrainian relations. ',
+				'Assistance in joint participation in grant calls ',
 				'Education: lectures and educational events, courses, and conferences, especially related to integration into Czech society, education about Ukrainian history and traditions, upbringing and personal development of people, and increasing their employability. preparation and further education of volunteers and other persons',
-				'Protection of the interests of Association members, especially in the legal and economic fields, providing relevant information in a changing environment and legal regulation of Czech-Ukrainian relations. '
+				'Cooperation with similar organizations in the Czech Republic and Europe ',
+				'Development and humanitarian aid: development cooperation, development education. humanitarian aid focused primarily on places and areas affected by the military conflict in Ukraine ',
+				'Development of volunteering: recruitment, selection, and record-keeping of volunteers, their preparation, accompaniment in voluntary service, and offering of follow-up activities. support for the development of volunteering in other organizations ',
+				'International activities: obtaining and sharing experiences, coordination, and participation in joint events at the international level ',
+				'Other: interest activities, one-time, holiday, and weekend events. cooperation with organizations and institutions in the Czech Republic and abroad to fulfill the purpose of the Association. publishing activities. creation of audiovisual works. participation in the creation of state policy in the above-mentioned areas  '
 			]
 		},
 		subjectBrief: {
@@ -174,10 +206,13 @@ export const content = {
 		},
 		contacts: {
 			header: 'Contact Us',
-			address: { header: 'Address', body: '[Your address]' },
-			email: { header: 'Email: ', body: '[Your email]' },
+			address: {
+				header: 'Address',
+				body: '[Address], České Budějovice 2, 370 11 České Budějovice, Czech Republic'
+			},
+			email: { header: 'Email', body: '[Your email]' },
 			phone: {
-				header: 'Phone: ',
+				header: 'Phone',
 				body: '[Your phone number]'
 			},
 			social: 'Follow us: '
@@ -198,24 +233,41 @@ export const content = {
 		},
 		about: 'Про нас',
 		name: {
-			header: 'Назва:',
+			header: 'Назва',
 			body: 'Asociace ProUA Jižní Čechy, z.s.'
 		},
 		legal: {
-			header: 'Юридична форма:',
+			header: 'Юридична форма',
 			body: 'Спілка'
 		},
 		founded: {
-			header: 'Дата заснування:',
+			header: 'Дата заснування',
 			body: '[Дата]'
 		},
+		foundationDate: {
+			header: 'Дата створення та реєстрації',
+			body: '[Дата]'
+		},
+
 		orgId: {
-			header: 'Ідентифікаційний номер:',
+			header: 'Ідентифікаційний номер',
 			body: '216 57 394'
 		},
 		legalAddress: {
-			header: 'Юридична адреса:',
-			body: '[Ваша адреса], 370 11 České Budějovice, Česká republika'
+			header: 'Юридична адреса',
+			body: '[Адреса], 370 11 České Budějovice'
+		},
+		highAuth: {
+			header: 'Назва найвищого органу',
+			body: 'Генеральна Асамблея'
+		},
+		statBody: {
+			header: 'Статутний орган - Голова',
+			body: ''
+		},
+		chairman: {
+			header: 'Голова',
+			body: `Мгр. ВАЛЕРІЯ ЮРІЇВНА ЗАБЕЛІНА, Ph.D., дата нар. [Дата]<br>[Адреса], Чеське Будейовіце 2, 370 11 Чеське Будейовіце<br>Дата початку: [дата]`
 		},
 		rights: 'Усі права захищені.',
 		purpose: {
@@ -230,16 +282,16 @@ export const content = {
 		subject: {
 			header: 'Предмет діяльності',
 			body: [
-				'Асистенція у спільній участі в грантових конкурсах ',
 				'Координація діяльності українських ініціатив у Південночеському краї та створення платформи для їх об’єднання, підтримка синергії діяльності по всьому Південночеському краю ',
-				'Міжнародна діяльність: отримання та обмін досвідом, координація та участь у спільних заходах на міжнародному рівні ',
-				'нше: інтересові заходи, одноразові, канікулярні та вихідні заходи. співпраця з організаціями та установами в Чехії та за кордоном для досягнення мети Асоціації. видавнича діяльність. створення аудіовізуальних творів. участь у створенні державної політики в зазначених вище областях  ',
 				'Підтримка співпраці членських організацій у спільних заходах, спільному використанні приміщень, фахівців та засобів, сприяння обміну досвідом між членами ',
-				'Розвиток волонтерства: пошук, відбір та облік волонтерів, їх підготовка, супровід у волонтерській службі та пропозиція подальших заходів. підтримка розвитку волонтерства в інших організаціях ',
-				'Розвиткова та гуманітарна допомога: розвиткова співпраця, розвиткове навчання. гуманітарна допомога, спрямована передусім на місця та регіони, що постраждали від військового конфлікту в Україні ',
-				'Співпраця з аналогічними організаціями в Чехії та Європі ',
+				'Захист інтересів членів Асоціації, особливо в правовій та економічній сферах, надання актуальної інформації в умовах змінного середовища та правового регулювання чесько-українських відносин ',
+				'Асистенція у спільній участі в грантових конкурсах ',
 				'Освіта: лекції та освітні заходи, курси та конференції, особливо пов’язані з інтеграцією в чеське суспільство, освітою про українську історію та традиції, вихованням та особистісним розвитком людей і підвищенням їх працевлаштованості. підготовка та подальше навчання волонтерів та інших осіб',
-				'Захист інтересів членів Асоціації, особливо в правовій та економічній сферах, надання актуальної інформації в умовах змінного середовища та правового регулювання чесько-українських відносин '
+				'Співпраця з аналогічними організаціями в Чехії та Європі ',
+				'Розвиткова та гуманітарна допомога: розвиткова співпраця, розвиткове навчання. гуманітарна допомога, спрямована передусім на місця та регіони, що постраждали від військового конфлікту в Україні ',
+				'Розвиток волонтерства: пошук, відбір та облік волонтерів, їх підготовка, супровід у волонтерській службі та пропозиція подальших заходів. підтримка розвитку волонтерства в інших організаціях',
+				'Міжнародна діяльність: отримання та обмін досвідом, координація та участь у спільних заходах на міжнародному рівні ',
+				'Інше: інтересові заходи, одноразові, канікулярні та вихідні заходи. співпраця з організаціями та установами в Чехії та за кордоном для досягнення мети Асоціації. видавнича діяльність. створення аудіовізуальних творів. участь у створенні державної політики в зазначених вище областях'
 			]
 		},
 		subjectBrief: {
@@ -266,18 +318,18 @@ export const content = {
 		contacts: {
 			header: "Зв'яжіться з нами",
 			address: {
-				header: 'Адреса: ',
+				header: 'Адреса',
 				body: '[Ваша адреса], 370 11 České Budějovice, Česká republika'
 			},
 			email: {
-				header: 'Email: ',
+				header: 'Email',
 				body: '[Ваш email]'
 			},
 			phone: {
-				header: 'Телефон: ',
+				header: 'Телефон',
 				body: '[Ваш номер телефону]'
 			},
-			social: 'Слідкуйте за нами: '
+			social: 'Слідкуйте за нами'
 		},
 		legalInfo: {
 			header: 'Правова інформація',

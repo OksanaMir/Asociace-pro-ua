@@ -86,21 +86,19 @@ export const generateMainContentHTML = content => {
 		  <div class="container carouselOuter px-0 my-4">
 			<div id="carouselControls" class="photobox carousel slide" data-bs-touch="false">
 			  <div class="carousel-inner">
-				${createListItems(
-					[
-						'images/praying.jpeg',
-						'images/with-military.jpeg',
-						'images/heart-and-candles.jpeg',
-						'images/people-on-square.jpeg',
-						'images/conference1.jpeg',
-						'images/traditions.jpeg'
-					].map(
-						src => `<div class="carousel-item${
-							src === 'images/praying.jpeg' ? ' active' : ''
-						}">
+				${[
+					'images/praying.jpeg',
+					'images/with-military.jpeg',
+					'images/heart-and-candles.jpeg',
+					'images/people-on-square.jpeg',
+					'images/conference1.jpeg',
+					'images/traditions.jpeg'
+				].map(
+					src => `<div class="carousel-item${
+						src === 'images/praying.jpeg' ? ' active' : ''
+					}">
 				  ${createImage(src, 'carousel image', 700, 500)}
 				</div>`
-					)
 				)}
 			  </div>
 			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">

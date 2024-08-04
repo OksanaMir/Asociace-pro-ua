@@ -88,9 +88,8 @@
     <header class="container-fluid bg-white text-center px-0 ">
         <div class="shadow container-fluid d-flex justify-content-between p-0 ">
             <div class="d-flex">
-                <img src="ornament.svg" alt="Asociace ProUA Jižní Čechy Logo" class="logo p-2 m-2">
-
-                <h1 id="site-title" class=" flex-grow-1 my-auto text-left px-1 py-5 fs-2 pangolin-regular ">
+                <img src="ornament.svg" alt="Asociace ProUA Jižní Čechy Logo" class="logo p-2 mt-2">
+                <h1 id="site-title" class="color-custom flex-grow-1 my-auto text-left px-1 py-5 fs-2 pangolin-regular ">
                     Asociace
                     ProUA
                     Jižní
@@ -98,22 +97,57 @@
                     z.s.
                 </h1>
             </div>
-            <nav class="navbar navbar-light bg-white px-0">
+            <nav class="color-custom navbar navbar-expand-lg navbar-light bg-white px-0">
                 <div class="container justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <!-- Hamburger menu icon toggle button -->
+                    <button id="navbarToggle"
+                        class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon middle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <!-- Navigation Links -->
+                        <!-- style="position: absolute; z-index: 200; left: -30%; padding: 10px;" -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto p-2 p-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link color-custom active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-custom" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mission">Mission</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-custom" href="#activities">Activities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#legal">Legal</a>
+                            </li>
+                        </ul>
 
-                        <li class="nav-item dropdown position-relative ">
-                            <a class=" nav-link dropdown-toggle text-black" href="#" id="languageDropdown" role="button"
-                                aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false">CS</a>
+                        <!-- Language Switcher -->
 
-                            <div class="dropdown-menu dropdown-menu-left position-absolute"
-                                aria-labelledby="languageDropdown">
-                                <a class="dropdown-item px-2" href="#" data-lang="cs">Čeština</a>
-                                <a class="dropdown-item px-2" href="#" data-lang="en">English</a>
-                                <a class="dropdown-item px-2" href="#" data-lang="uk">Українська</a>
-                            </div>
-                        </li>
-                    </ul>
+                        <ul class="navbar-nav ms-lg-4">
+                            <li class="nav-item dropdown">
+                                <a class=" nav-link dropdown-toggle text-black" href="#" id="languageDropdown"
+                                    role="button" aria-haspopup="true" data-bs-toggle="dropdown"
+                                    aria-expanded="false">CS</a>
+
+                                <div class="dropdown-menu dropdown-menu" aria-labelledby="languageDropdown">
+                                    <a class="dropdown-item px-2" href="#" data-lang="cs">Čeština</a>
+                                    <a class="dropdown-item px-2" href="#" data-lang="en">English</a>
+                                    <a class="dropdown-item px-2" href="#" data-lang="uk">Українська</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>

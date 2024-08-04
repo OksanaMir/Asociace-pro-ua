@@ -91,7 +91,8 @@ export const generateMainContentHTML = content => {
 						'images/praying.jpeg',
 						'images/with-military.jpeg',
 						'images/heart-and-candles.jpeg',
-						'images/conference3.jpeg',
+						'images/people-on-square.jpeg',
+						'images/conference1.jpeg',
 						'images/traditions.jpeg'
 					].map(
 						src => `<div class="carousel-item${

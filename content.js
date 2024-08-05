@@ -21,33 +21,34 @@ export const generateMainContentHTML = content => {
 		'about',
 		content.about,
 		`
-      <div class="row flex-lg-row align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6 ">
-          ${createImage(
-				'images/spolek-with-flag.jpeg',
-				'Members with the flag',
-				700,
-				500
-			)}
-        </div>
-        <div class="col-lg-6 col-xl-4">
-			${[
-				content.name,
-				content.legal,
-				content.founded,
-				content.orgId,
-				content.legalAddress
-			]
-				.map(
-					item =>
-						`<p>
-					<strong>${item.header}: </strong> ${item.body}
-				</p>`
-				)
-				.join('')}
-        </div>
-      </div>
-    `
+      		<div class="row flex-lg-row align-items-center g-5 py-5">
+				<div class="col-12 col-sm-6 col-lg-8 ">
+				${createImage(
+					'images/spolek-with-flag.jpeg',
+					'Members with the flag',
+					700,
+					500
+				)}
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4">
+					${[
+						content.name,
+						content.legal,
+						content.founded,
+						content.orgId,
+						content.legalAddress
+					]
+						.map(
+							item =>
+								`<p>
+							<strong>${item.header}: </strong> ${item.body}
+						</p>`
+						)
+						.join('')}
+				</div>
+			</div>
+    	`,
+		'mx-0 '
 	);
 
 	const missionSection = createSection(
@@ -55,10 +56,10 @@ export const generateMainContentHTML = content => {
 		content.subjectBrief.header,
 		`
 		  	<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-				<div class="col-10 col-sm-8 col-lg-6">
-			  ${createImage('images/before-speech.jpeg', 'Before the Speech', 500, 700)}
-			</div>
-				<div class="col-lg-6">
+				<div class="col-12 col-sm-6 col-lg-8">
+			  	${createImage('images/before-speech.jpeg', 'Before the Speech', 500, 700)}
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4">
 			  		<ul class="list-unstyled my-4">
 						<li>
 				  			<ul>
@@ -69,48 +70,54 @@ export const generateMainContentHTML = content => {
         		</div>
       		</div>
     	`,
-		'color-custom'
+		'color-custom mx-0 '
 	);
 
 	const activitiesSection = createSection(
 		'activities',
 		content.activities.header,
 		`
-		  <ul class="list-unstyled mx-auto p-2">
-			<li>
-			  <ul>
-				${createListItems(content.activities.list)}
-			  </ul>
-			</li>
-		  </ul>
-		  <div class="container carouselOuter px-0 my-4">
-			<div id="carouselControls" class="photobox carousel slide" data-bs-touch="false">
-			  <div class="carousel-inner">
-				${[
-					'images/praying.jpeg',
-					'images/with-military.jpeg',
-					'images/heart-and-candles.jpeg',
-					'images/people-on-square.jpeg',
-					'images/conference1.jpeg',
-					'images/traditions.jpeg'
-				].map(
-					src => `<div class="carousel-item${
-						src === 'images/praying.jpeg' ? ' active' : ''
-					}">
-				  ${createImage(src, 'carousel image', 700, 500)}
-				</div>`
-				)}
-			  </div>
-			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+			<div class="row">
+				<div class="col-12">
+					<ul class="list-unstyled mx-auto p-2 ">
+						<li>
+							<ul>
+							${createListItems(content.activities.list)}
+						</ul>
+						</li>
+					</ul>
+				</div>
+		  		<div class="container carouselOuter px-0 my-4">
+					<div id="carouselControls" class="photobox carousel slide" data-bs-touch="false">
+						<div class="carousel-inner">
+							${[
+								'images/praying.jpeg',
+								'images/with-military.jpeg',
+								'images/heart-and-candles.jpeg',
+								'images/people-on-square.jpeg',
+								'images/conference1.jpeg',
+								'images/traditions.jpeg'
+							].map(
+								src => `<div class="carousel-item${
+									src === 'images/praying.jpeg'
+										? ' active'
+										: ''
+								}">
+										${createImage(src, 'carousel image', 700, 500)}
+									</div>`
+							)}
+			  			</div>
+			  			<button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+          				</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+        			</div>
+      			</div>
+	  		</div>
     `,
 		'color-custom'
 	);
@@ -118,7 +125,7 @@ export const generateMainContentHTML = content => {
 	const contactSection = createSection(
 		'contact',
 		content.contacts.header,
-		`
+		`<div>
 			<p><strong>${content.contacts.address.header}: </strong> ${
 			content.contacts.address.body
 		}
@@ -155,17 +162,19 @@ export const generateMainContentHTML = content => {
 					</ul>
 				</li>
 			</ul>
+		</div>
 		`,
-		'color-custom'
+		'color-custom mx-0 '
 	);
 
 	const legalSection = createSection(
 		'legal',
 		content.legalInfo.header,
-		`
+		`<div>
 		  <p>${content.legalInfo.body} <a class="link-info link-underline-light" href="https://or.justice.cz/ias/ui/rejstrik-$firma?p%3A%3Asubmit=x&.%2Frejstrik-%24&nazev=Asociace%20ProUA&ico=&forma=spolek&polozek=500&typHledani=CONTAINS&jenPlatne=VSECHNY&utm_source=spolkovyrejstrik.cz&referral=spolkovyrejstrik.cz" target="_blank">http://www.justice.cz</a>.</p>
+		  </div>
 		`,
-		'color-custom'
+		'color-custom mx-0'
 	);
 
 	return `

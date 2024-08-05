@@ -8,6 +8,7 @@
 	--font-color: #071952;
 	--gray-color: #ebf4f6;
 	--bs--header-font-color: #071952;
+	--font--nav-link-fontW: 400;
 }
 
 html {
@@ -45,45 +46,48 @@ body {
 	font-style: normal;
 }
 
+.shadow {
+	box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3) !important;
+}
+
+.bg-shadow-lg {
+	box-shadow: 0 1rem 3rem rgba(black, 0.175) !important;
+}
 .logo {
 	width: 5em;
 	height: 5em;
 	flex-shrink: 0;
 	min-width: 5em;
 }
-
-.shadow {
-	box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3) !important;
-}
-.bg-shadow-lg {
-	box-shadow: 0 1rem 3rem rgba(black, 0.175) !important;
-}
-
-.motto {
-	background-image: url(images/conference.jpeg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 600px;
-	color: aliceblue;
+.header-nav {
+	font-weight: var(--font--nav-link-fontW);
 }
 
 /* Custom styles for dropdown menu */
+/* My styles for navbar */
+.collapse.show {
+	z-index: 200;
+	background-color: white;
+	position: absolute !important;
+	right: 0px;
+	left: 65%;
+	top: 100%;
+}
+.navbar-collapse.collapsing {
+	-webkit-transition: none;
+	transition: none;
+	display: none;
+}
 
 .nav-item .dropdown-menu {
-	top: 100%; /* Position the dropdown menu below the button */
-	left: -100% !important; /* Align the dropdown menu to the left -15%*/
-	right: 0;
-	transform: translateY(0); /* Ensure there's no additional offset */
-	will-change: transform; /* Optimize performance */
+	top: 100%;
+	right: 0 !important;
+	transform: translateY(0);
+	/* Ensure there's no additional offset */
+	/* will-change: transform;  */
+	/* Optimize performance */
 }
-/* My styles for navbar */
-#navbarContent ul {
-	background-color: white;
-}
-/* #navbarContent.show .navbar-nav {
-	position: absolute;
-} */
+
 /* end of my styles */
 
 /* toggler  icon start*/
@@ -150,6 +154,11 @@ navbar-toggler span {
 
 /* Ensure dropdown doesn't affect page layout when shown */
 .nav-item .dropdown-menu.show {
+	position: absolute !important;
+	z-index: 300;
+	top: 100%;
+	left: 0;
+	right: 0;
 	display: block;
 	float: none; /* Disable float */
 	min-width: max-content; /* Ensure it doesn’t push other content by auto-sizing */
@@ -157,17 +166,28 @@ navbar-toggler span {
 
 .dropdown-menu {
 	max-width: fit-content;
-	background-color: #ffffffb0;
+	background-color: var(--gray-color);
+	color: var(--font-color);
+}
+.dropdown-menu:hover {
+	background-color: var(--footer-color);
+	color: var(--gray-color);
 }
 .dropdown-item.active {
-	background-color: #6d6b6b;
+	background-color: var(--footer-color);
+	color: var(--gray-color);
 }
 .dropdown-menu a {
 	white-space: nowrap;
 }
 
-section {
-	margin: 30px;
+.motto {
+	background-image: url(images/conference.jpeg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	color: aliceblue;
 }
 .color-custom {
 	color: var(--font-color) !important;
@@ -197,10 +217,6 @@ h2::before {
 	height: 700px;
 	object-fit: cover; /* Ensures the image covers the container */
 	object-position: center center;
-}
-.main {
-	position: relative;
-	top: -35px;
 }
 
 /* Responsive Design */
@@ -247,7 +263,7 @@ h2::before {
 	}
 }
 @media (min-width: 1700px) {
-	.carouselOuter {
+	.main {
 		max-width: 60%;
 	}
 }

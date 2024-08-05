@@ -169,13 +169,16 @@ navbar-toggler span {
 	background-color: var(--gray-color);
 	color: var(--font-color);
 }
-.dropdown-menu:hover {
-	background-color: var(--footer-color);
+.dropdown-item:hover {
+	background-color: var(--bg-color);
 	color: var(--gray-color);
 }
 .dropdown-item.active {
 	background-color: var(--footer-color);
 	color: var(--gray-color);
+}
+.dropdown-item.active:hover {
+	background-color: var(--footer-color);
 }
 .dropdown-menu a {
 	white-space: nowrap;

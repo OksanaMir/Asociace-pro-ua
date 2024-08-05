@@ -65,20 +65,50 @@ body {
 
 /* Custom styles for dropdown menu */
 /* My styles for navbar */
+/* slider collapse */
 .collapse.show {
+	display: block;
+	padding: 25px;
 	z-index: 200;
-	background-color: white;
+	background-color: var(--gray-color);
 	position: absolute !important;
 	right: 0px;
-	left: 65%;
 	top: 100%;
+	animation-duration: 0.5s;
+	animation-name: slidein;
 }
+.collapse:not(.show) {
+	animation-duration: 0.5s;
+	animation-name: slideout;
+	animation-timing-function: linear;
+}
+
+@keyframes slidein {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideout {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(100%);
+	}
+}
+
 .navbar-collapse.collapsing {
 	-webkit-transition: none;
 	transition: none;
 	display: none;
 }
 
+/* lang menu */
 .nav-item .dropdown-menu {
 	top: 100%;
 	right: 0 !important;

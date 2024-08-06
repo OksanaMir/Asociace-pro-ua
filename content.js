@@ -5,15 +5,21 @@ export const generateMainContentHTML = content => {
 		console.error('Content is not found:', content);
 		return;
 	}
-
 	const mottoSection = `
     <section class="mx-0 bg-shadow-lg rounded mb-5">
-      <div class="motto bg-white d-xl-flex">
-        <div class="d-lg-flex flex-column p-4 fst-italic w-50 pangolin-regular">
-          <h2 class="display-3 fw-bold lh-2 text-left ms-xl-5">Pro UA</h2>
-          <h3 id="site-motto" class="display-5 lh-2 text-right p-0 me-xl-5">${content.motto}</h3>
-        </div>
-      </div>
+    	<div class="motto bg-white d-xl-flex position-relative">
+			<div class="d-lg-flex flex-column p-4 fst-italic w-50 pangolin-regular">
+				<h2 class="display-3 fw-bold lh-2 text-left ms-xl-5">Pro UA</h2>
+				<h3 id="site-motto" class="display-5 lh-2 text-right p-0 me-xl-5">${content.motto}</h3>
+        	</div>
+		  	<p class='slideLine text-white text-center mb-0 mb-0 position-absolute bottom-0'>
+			<span class="anouncement bottom-0">
+				Více fotografií z předchozích akcí a naše oznámení můžete vidět na naší stránce na Instagramu. Klikněte na odkaz: <a href="https://www.instagram.com/zenskyj_klub?igsh=amp6Z3pnenJybjNo&utm_source=qr"
+                class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+				</span>
+			</p>
+      	</div>
+	  
     </section>
   `;
 

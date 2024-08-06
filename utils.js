@@ -1,6 +1,14 @@
 export const createListItems = list =>
 	list.map(item => `<li>${item}</li>`).join('');
 
+export const createNavLinks = links =>
+	links
+		.map(
+			link =>
+				`<li class="nav-item"><a class="nav-link color-custom fs-5 header-nav" href='#${link.id}'>${link.tab}</a></li>`
+		)
+		.join('');
+
 export const createSection = (id, title, content, additionalClasses = '') => `
   <section id="${id}" class="${id} mb-4 p-4 ${additionalClasses}">
     <h2 class="display-4 fw-bold lh-2 mb-3 color-custom">${title}</h2>

@@ -3,13 +3,28 @@
 	--font-size: 1.3rem;
 	/* --bg-color: #f4f4f4; */
 	--bg-color: #37b7c3;
+	/* --bg-color: #6eacda; */
 	--text-color: #333;
 	--footer-color: #088395;
+	/* --footer-color: #03346e; */
 	--font-color: #071952;
+	/* --font-color: #021526; */
 	--gray-color: #ebf4f6;
+	/* --gray-color: #e6e5c5; */
 	--bs--header-font-color: #071952;
+	/* --bs--header-font-color: #021526; */
 	--font--nav-link-fontW: 400;
+	--pale-yellow-1: #f8f4e6;
+	--pale-yellow-2: #f6f3eb;
+	--pale-yellow-3: #f4f5ec;
+	--yellow-gold: #ffd700;
+	--yellow-muted: #f1c40f;
 }
+/* #ebf4f6(dropdowns background and in gradient of body background)  #071952(headings texts) 
+#088395, #37b7c3(backfrounds, hover and in gradient of body background, ) 
+bg-light bg-white(main and header backgrounds),
+ #333(for paragraphs texts)
+ red(decoration svg for headings::before*/
 
 html {
 	box-sizing: border-box;
@@ -53,11 +68,14 @@ body {
 .bg-shadow-lg {
 	box-shadow: 0 1rem 3rem rgba(black, 0.175) !important;
 }
+.header-bg {
+	background-color: var(--pale-yellow-3);
+}
 .logo {
-	width: 5em;
-	height: 5em;
+	width: 3.5em;
+	height: 3.55em;
 	flex-shrink: 0;
-	min-width: 5em;
+	min-width: 3.5em;
 }
 .header-nav {
 	font-weight: var(--font--nav-link-fontW);
@@ -221,7 +239,56 @@ navbar-toggler span {
 	background-size: cover;
 	height: 600px;
 	color: aliceblue;
+	overflow: hidden;
 }
+/* animation: a, b;
+animation-duration: 2s, 2s; 
+animation-delay: 0s, 4s;
+ */
+.slideLine {
+	animation: slidingText 6s ease-in-out 1;
+	/* white-space: nowrap; */
+	display: block;
+	padding: 20px;
+	overflow: hidden;
+	font-size: 1.2em;
+}
+.anouncement {
+	animation: slidingEnds 6s linear 6s 1;
+}
+/* .link-icon {
+	animation: zoomIn 2s linear 8s 1;
+} */
+@keyframes slidingText {
+	0% {
+		transform: translateX(100%);
+	}
+	50% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+	/* from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	} */
+}
+@keyframes slidingEnds {
+	0% {
+		transform: translateX(200%);
+		word-spacing: 0.4em;
+	}
+	50% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
 .color-custom {
 	color: var(--font-color) !important;
 }
@@ -250,6 +317,9 @@ h2::before {
 	height: 700px;
 	object-fit: cover; /* Ensures the image covers the container */
 	object-position: center center;
+}
+.main {
+	background-color: var(--pale-yellow-3);
 }
 
 /* Responsive Design */

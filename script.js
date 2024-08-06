@@ -1,6 +1,7 @@
 import { content } from './texts.js';
 import { generateModalHTML } from './modal.js';
 import { generateMainContentHTML } from './content.js';
+import { createNavLinks } from './utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 	const getScreenType = () => {
@@ -17,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const mainElm = document.getElementById('main-content');
 	const siteTitleElm = document.getElementById('site-title');
+	const headerNavLinksElm = document.querySelector(
+		'#navbarContent .navbar-nav'
+	);
 	const footerTexrElm = document.getElementById('footer-text');
 	const legalModalElement = document.getElementById('legalModal');
 
@@ -56,9 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		langBtn.textContent = langMode;
 
 		siteTitleElm.innerText = content.name.body;
-		footerTexrElm.innerText = `\u00A9 2024 Asociace ProUA Jižní Čechy. ${content.rights}`;
+
+		headerNavLinksElm.innerHTML = createNavLinks(data[langMode].navLinks);
 
 		mainElm.innerHTML = generateMainContentHTML(data[langMode]);
+
+		footerTexrElm.innerText = `\u00A9 2024 Asociace ProUA Jižní Čechy. ${content.rights}`;
+
 		legalModalElement.innerHTML = generateModalHTML(data[langMode]);
 
 		// Clear current active class

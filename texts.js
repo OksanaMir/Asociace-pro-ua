@@ -1,6 +1,15 @@
 export const content = {
 	cs: {
 		lang_btn: 'Cs',
+		navLinks: [
+			{ id: 'about', tab: 'O nás' },
+			{ id: 'mission', tab: 'Mise' },
+			{ id: 'activities', tab: 'Aktivity' },
+			{ id: 'contact', tab: 'Kontakt' },
+			{ id: 'legal', tab: 'Právní' }
+		],
+		slidingText:
+			'Více fotografií z předchozích akcí a naše oznámení můžete vidět na naší stránce na Instagramu. Klikněte na odkaz',
 		modal: {
 			header1: 'Výpis subjektu Asociace ProUA Jižní Čechy, z.s.',
 			header2: 'Výpis',
@@ -114,7 +123,17 @@ export const content = {
 	},
 	en: {
 		lang_btn: 'En',
+		navLinks: [
+			{ id: 'about', tab: 'About' },
+			{ id: 'mission', tab: 'Mission' },
+			{ id: 'activities', tab: 'Activities' },
+			{ id: 'contact', tab: 'Contact' },
+			{ id: 'legal', tab: 'Legal' }
+		],
+		slidingText:
+			'More photos from previous events and our announcements can be seen on our Instagram page. Follow the link',
 		motto: 'Let’s unite for the future!',
+
 		modal: {
 			header1: 'Excerpt of the entity Asociace ProUA Jižní Čechy, z.s.',
 			header2: 'Excerpt',
@@ -224,6 +243,15 @@ export const content = {
 	},
 	uk: {
 		lang_btn: 'Uk',
+		navLinks: [
+			{ id: 'about', tab: 'Про нас' },
+			{ id: 'mission', tab: 'Місія' },
+			{ id: 'activities', tab: 'Діяльність' },
+			{ id: 'contact', tab: 'Контакти' },
+			{ id: 'legal', tab: 'Правова інформація' }
+		],
+		slidingText:
+			'Більше фото з попередніх заходів та наші анонси ви можете побачити на нашій сторінці в Інстаграмі. Переходьте за посиланням',
 		motto: 'Єднаймося заради майбутнього!',
 		modal: {
 			header1: "Витяг суб'єкта Asociace ProUA Jižní Čechy, z.s.",

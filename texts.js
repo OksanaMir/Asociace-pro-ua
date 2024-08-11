@@ -6,16 +6,15 @@ export const content = {
 			{ id: 'mission', tab: 'Mise' },
 			{ id: 'activities', tab: 'Aktivity' },
 			{ id: 'contact', tab: 'Kontakt' },
-			{ id: 'legal', tab: 'Právní' }
+			{ id: 'partners', tab: 'Naši partneři' }
 		],
-		slidingText:
-			'Více fotografií z předchozích akcí a naše oznámení můžete vidět na naší stránce na Instagramu. Klikněte na odkaz',
 		modal: {
 			header1: 'Výpis subjektu Asociace ProUA Jižní Čechy, z.s.',
 			header2: 'Výpis',
 			header3:
 				'ze spolkového rejstříku, vedeného Krajským soudem v Českých Budějovicích'
 		},
+		slidingText: 'Sledujte naše oznámení',
 		motto: 'Spojme se pro budoucnost!',
 		about: 'O nás',
 		name: {
@@ -26,6 +25,8 @@ export const content = {
 			header: 'Právní forma',
 			body: 'Spolek'
 		},
+		legalNotice:
+			'Asociace ProUA Jižní Čechy je registrována u Krajského soudu v Českých Budějovicích, spisová značka L, vložka 9426. Pro podrobné právní informace navštivte',
 		founded: {
 			header: 'Datum vzniku',
 			body: '[Datum]'
@@ -40,7 +41,7 @@ export const content = {
 		},
 		legalAddress: {
 			header: 'Sídlo',
-			body: `[Adresa], České Budějovice 2, 370 11 České Budějovice`
+			body: `370 11 České Budějovice`
 		},
 		highAuth: {
 			header: 'Název nejvyššího orgánu',
@@ -104,7 +105,7 @@ export const content = {
 			header: 'Kontaktujte nás',
 			address: {
 				header: 'Adresa',
-				body: ' [Adresa], České Budějovice 2, 370 11 České Budějovice, Česká republika'
+				body: ' 370 11 České Budějovice, Česká republika'
 			},
 			email: {
 				header: 'Email',
@@ -116,9 +117,30 @@ export const content = {
 			},
 			social: 'Sledujte nás'
 		},
-		legalInfo: {
-			header: 'Právní informace',
-			body: 'Asociace ProUA Jižní Čechy je registrována u Krajského soudu v Českých Budějovicích, spisová značka L, vložka 9426. Pro podrobné právní informace navštivte'
+		partners: {
+			header: 'Naši partneři',
+			body: [
+				{
+					name: ' Спілка українців Богемії',
+					link: 'https://www.facebook.com/share/iUmJapKbaZ5K9qbC/',
+					img: 'images/logo-org.png'
+				},
+				{
+					name: 'Женский клуб | Южная Чехия | České Budejovice',
+					link: 'https://www.instagram.com/zenskyj_klub?igsh=amp6Z3pnenJybjNo&utm_source=qr',
+					img: 'images/womens-club.jpg'
+				},
+				{
+					name: 'Vzdělávací Centrum Alfa',
+					link: 'https://www.centrumalfa.cz',
+					img: 'https://c249b6a9e8.clvaw-cdnwnd.com/33241b8add21a69dc4b4070826ac1209/200000356-b705db705f/450/Screenshot%202022-08-13%20at%2017.04.35.webp?ph=c249b6a9e8'
+				},
+				{
+					name: 'Klub nových komunikací',
+					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU    ',
+					img: 'images/new-com-club.jpeg'
+				}
+			]
 		}
 	},
 	en: {
@@ -128,10 +150,9 @@ export const content = {
 			{ id: 'mission', tab: 'Mission' },
 			{ id: 'activities', tab: 'Activities' },
 			{ id: 'contact', tab: 'Contact' },
-			{ id: 'legal', tab: 'Legal' }
+			{ id: 'partners', tab: 'Our partners' }
 		],
-		slidingText:
-			'More photos from previous events and our announcements can be seen on our Instagram page. Follow the link',
+		slidingText: 'Stay tuned for our announcements',
 		motto: 'Let’s unite for the future!',
 
 		modal: {
@@ -148,6 +169,8 @@ export const content = {
 			header: 'Legal Form',
 			body: 'Association'
 		},
+		legalNotice:
+			'Asociace ProUA Jižní Čechy is registered under the jurisdiction of the Regional Court in České Budějovice, file L, insert 9426. For detailed legal information, visit',
 		founded: {
 			header: 'Date of Establishment',
 			body: '[Date]'
@@ -227,7 +250,7 @@ export const content = {
 			header: 'Contact Us',
 			address: {
 				header: 'Address',
-				body: '[Address], České Budějovice 2, 370 11 České Budějovice, Czech Republic'
+				body: '370 11 České Budějovice, Czech Republic'
 			},
 			email: { header: 'Email', body: '[Your email]' },
 			phone: {
@@ -236,9 +259,30 @@ export const content = {
 			},
 			social: 'Follow us: '
 		},
-		legalInfo: {
-			header: 'Legal Information',
-			body: 'Asociace ProUA Jižní Čechy is registered under the jurisdiction of the Regional Court in České Budějovice, file L, insert 9426. For detailed legal information, visit'
+		partners: {
+			header: 'Naši partneři',
+			body: [
+				{
+					name: ' Спілка українців Богемії',
+					link: 'https://www.facebook.com/share/iUmJapKbaZ5K9qbC/',
+					img: 'images/logo-org.png'
+				},
+				{
+					name: 'Женский клуб | Южная Чехия | České Budejovice',
+					link: 'https://www.instagram.com/zenskyj_klub?igsh=amp6Z3pnenJybjNo&utm_source=qr',
+					img: 'images/womens-club.jpg'
+				},
+				{
+					name: 'Vzdělávací Centrum Alfa',
+					link: 'https://www.centrumalfa.cz',
+					img: 'https://c249b6a9e8.clvaw-cdnwnd.com/33241b8add21a69dc4b4070826ac1209/200000356-b705db705f/450/Screenshot%202022-08-13%20at%2017.04.35.webp?ph=c249b6a9e8'
+				},
+				{
+					name: 'Klub nových komunikací',
+					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU    ',
+					img: 'https://www.facebook.com/photo/?fbid=129646649825654&set=a.129646639825655&__tn__=%3C'
+				}
+			]
 		}
 	},
 	uk: {
@@ -248,10 +292,9 @@ export const content = {
 			{ id: 'mission', tab: 'Місія' },
 			{ id: 'activities', tab: 'Діяльність' },
 			{ id: 'contact', tab: 'Контакти' },
-			{ id: 'legal', tab: 'Правова інформація' }
+			{ id: 'partners', tab: 'Наші партнери' }
 		],
-		slidingText:
-			'Більше фото з попередніх заходів та наші анонси ви можете побачити на нашій сторінці в Інстаграмі. Переходьте за посиланням',
+		slidingText: 'Слідкуйте за нашими анонсами',
 		motto: 'Єднаймося заради майбутнього!',
 		modal: {
 			header1: "Витяг суб'єкта Asociace ProUA Jižní Čechy, z.s.",
@@ -268,6 +311,7 @@ export const content = {
 			header: 'Юридична форма',
 			body: 'Спілка'
 		},
+		legal: 'Асоціація ProUA Jižní Čechy зареєстрована під юрисдикцією Регіонального суду в Чеських Будейовицях, справа L, вставка 9426. Для отримання детальної правової інформації відвідайте',
 		founded: {
 			header: 'Дата заснування',
 			body: '[Дата]'
@@ -347,7 +391,7 @@ export const content = {
 			header: "Зв'яжіться з нами",
 			address: {
 				header: 'Адреса',
-				body: '[Ваша адреса], 370 11 České Budějovice, Česká republika'
+				body: '370 11 České Budějovice, Česká republika'
 			},
 			email: {
 				header: 'Email',
@@ -359,9 +403,34 @@ export const content = {
 			},
 			social: 'Слідкуйте за нами'
 		},
-		legalInfo: {
-			header: 'Правова інформація',
+		partners: {
+			header: 'Наші партнери',
 			body: 'Асоціація ProUA Jižní Čechy зареєстрована під юрисдикцією Регіонального суду в Чеських Будейовицях, справа L, вставка 9426. Для отримання детальної правової інформації відвідайте'
+		},
+		partners: {
+			header: 'Naši partneři',
+			body: [
+				{
+					name: ' Спілка українців Богемії',
+					link: 'https://www.facebook.com/share/iUmJapKbaZ5K9qbC/',
+					img: 'images/logo-org.png'
+				},
+				{
+					name: 'Женский клуб | Южная Чехия | České Budejovice',
+					link: 'https://www.instagram.com/zenskyj_klub?igsh=amp6Z3pnenJybjNo&utm_source=qr',
+					img: 'images/womens-club.jpg'
+				},
+				{
+					name: 'Vzdělávací Centrum Alfa',
+					link: 'https://www.centrumalfa.cz',
+					img: 'https://c249b6a9e8.clvaw-cdnwnd.com/33241b8add21a69dc4b4070826ac1209/200000356-b705db705f/450/Screenshot%202022-08-13%20at%2017.04.35.webp?ph=c249b6a9e8'
+				},
+				{
+					name: 'Klub nových komunikací',
+					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU    ',
+					img: 'https://www.facebook.com/photo/?fbid=129646649825654&set=a.129646639825655&__tn__=%3C'
+				}
+			]
 		}
 	}
 };

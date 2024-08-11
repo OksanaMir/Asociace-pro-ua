@@ -137,7 +137,7 @@ export const content = {
 				},
 				{
 					name: 'Klub nových komunikací',
-					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU    ',
+					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU ',
 					img: 'images/new-com-club.jpeg'
 				}
 			]
@@ -279,8 +279,8 @@ export const content = {
 				},
 				{
 					name: 'Klub nových komunikací',
-					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU    ',
-					img: 'https://www.facebook.com/photo/?fbid=129646649825654&set=a.129646639825655&__tn__=%3C'
+					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU ',
+					img: 'images/new-com-club.jpeg'
 				}
 			]
 		}
@@ -311,7 +311,8 @@ export const content = {
 			header: 'Юридична форма',
 			body: 'Спілка'
 		},
-		legal: 'Асоціація ProUA Jižní Čechy зареєстрована під юрисдикцією Регіонального суду в Чеських Будейовицях, справа L, вставка 9426. Для отримання детальної правової інформації відвідайте',
+		legalNotice:
+			'Асоціація ProUA Jižní Čechy зареєстрована під юрисдикцією Регіонального суду в Чеських Будейовицях, справа L, вставка 9426. Для отримання детальної правової інформації відвідайте',
 		founded: {
 			header: 'Дата заснування',
 			body: '[Дата]'
@@ -405,10 +406,6 @@ export const content = {
 		},
 		partners: {
 			header: 'Наші партнери',
-			body: 'Асоціація ProUA Jižní Čechy зареєстрована під юрисдикцією Регіонального суду в Чеських Будейовицях, справа L, вставка 9426. Для отримання детальної правової інформації відвідайте'
-		},
-		partners: {
-			header: 'Naši partneři',
 			body: [
 				{
 					name: ' Спілка українців Богемії',
@@ -427,8 +424,8 @@ export const content = {
 				},
 				{
 					name: 'Klub nových komunikací',
-					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU    ',
-					img: 'https://www.facebook.com/photo/?fbid=129646649825654&set=a.129646639825655&__tn__=%3C'
+					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU ',
+					img: 'images/new-com-club.jpeg'
 				}
 			]
 		}

@@ -1,6 +1,6 @@
 /* General Styles */
 :root {
-	--font-size: 1.3rem;
+	--font-size: 1.3rem; /*Bootstrap fs-5 = 1.25rem*/
 	/* --bg-color-2: #f4f4f4; */
 	--bg-color: #37b7c3;
 	/* --bg-color: #6eacda; */
@@ -16,13 +16,13 @@
 	--font--nav-link-fontW: 400;
 	--cream-yellow: #f4f5ec;
 	/* flag gradient */
-	--azure-blue: rgba(0, 123, 255, 0.98);
-	--medium-blue: rgba(51, 153, 255, 0.97);
-	--sky-blue: rgba(153, 207, 255, 0.96);
-	--soft-yellow-green: rgba(204, 229, 255, 0.95);
-	--pale-yellow: rgba(255, 230, 153, 0.65);
-	--light-yellow: rgba(255, 224, 102, 0.55);
-	--gold-yellow: rgba(255, 217, 0, 0.45);
+	--azure-blue: rgba(0, 123, 255, 0.98); /*Blue (End):(Azure Blue)*/
+	--medium-blue: rgba(51, 153, 255, 0.97); /*Medium Blue*/
+	--sky-blue: rgba(153, 207, 255, 0.96); /*Sky Blue*/
+	--soft-yellow-green: rgba(204, 229, 255, 0.95); /*Soft Yellow-Green*/
+	--pale-yellow: rgba(255, 230, 153, 0.65); /*Pale Yellow*/
+	--light-yellow: rgba(255, 224, 102, 0.55); /*Light Yellow */
+	--gold-yellow: rgba(255, 217, 0, 0.45); /*Yellow (Start): (Gold)*/
 }
 /* #ebf4f6(dropdowns background and in gradient of body background)  #071952(headings texts) 
 #088395, #37b7c3(backgrounds, hover and in gradient of body background, ) 
@@ -59,6 +59,12 @@ body {
 	margin: 0;
 }
 
+.color-custom {
+	color: var(--font-color) !important;
+}
+.dark-bg-custom {
+	background-color: var(--footer-color);
+}
 .pangolin-regular {
 	font-family: 'Pangolin', cursive;
 	font-weight: 400;
@@ -67,9 +73,6 @@ body {
 
 .shadow {
 	box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3) !important;
-}
-.card {
-	background-color: var(--gray-color);
 }
 
 .bg-shadow-lg {
@@ -213,14 +216,10 @@ navbar-toggler span {
 .dropdown-menu a {
 	white-space: nowrap;
 }
-/* 	Yellow (Start): #FFD700 (Gold)
-	2.	Light Yellow: #FFE066
-	3.	Pale Yellow: #FFE599
-	4.	Soft Yellow-Green: #CCE5FF
-	5.	Sky Blue: #99CFFF
-	6.	Medium Blue: #3399FF
-	7.	Blue (End): #007BFF (Azure Blue)
- */
+
+.main {
+	background-color: var(--cream-yellow);
+}
 .motto {
 	background-image: linear-gradient(
 			var(--azure-blue),
@@ -245,26 +244,22 @@ navbar-toggler span {
 	font-size: 1.5em !important;
 	font-weight: 800;
 }
-.anouncement,
-.anouncement a {
+.anouncement {
 	/* font-size: var(--font-size); */
 
 	color: var(--font-color);
 }
-.anouncement a:hover {
+.anouncement a:hover,
+.card:hover a,
+.header-nav:hover {
 	/* font-size: var(--font-size); */
 
-	color: var(--bg-color);
+	color: var(--bg-color) !important;
 }
 .link-icon {
 	/* animation: zoomIn 2s linear 8s 1;  animation: 3s linear 1s infinite running slidein; */
 }
-.color-custom {
-	color: var(--font-color) !important;
-}
-.dark-bg-custom {
-	background-color: var(--footer-color);
-}
+
 h2::before {
 	content: 'm';
 	font-family: 'Yarndings 12', system-ui;
@@ -288,8 +283,9 @@ h2::before {
 	object-fit: cover; /* Ensures the image covers the container */
 	object-position: center center;
 }
-.main {
-	background-color: var(--cream-yellow);
+
+.card {
+	background-color: var(--gray-color);
 }
 
 /* Responsive Design */

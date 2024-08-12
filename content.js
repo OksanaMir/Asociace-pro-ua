@@ -12,11 +12,11 @@ export const generateMainContentHTML = content => {
 				<h2 class="display-3 fw-bold lh-2 text-left ms-xl-5">Pro UA</h2>
 				<h3 id="site-motto" class="display-5 lh-2 text-right p-0 me-xl-5">${content.motto}</h3>
         	</div>
-		  	<p class='slideLine text-white text-center mb-0 mb-0 position-absolute bottom-0 w-100'>
-			<span class="anouncement bottom-0">
+		  	<p class='slideLine text-center mb-0 mb-0 position-absolute bottom-0 w-100'>
+			<span class="anouncement bottom-0"> 
 				${content.slidingText} <i class="fas fa-hand-point-right"></i> <a href="https://www.instagram.com/zenskyj_klub?igsh=amp6Z3pnenJybjNo&utm_source=qr"
-                class=" mx-4"><i class="fab fa-instagram"></i></a><a href=""
-                class=" mx-4"><i class="fab fa-facebook"></i></a>
+                class="text-reset mx-3"><i class="fab fa-instagram"></i></a><a href=""
+                class="text-reset mx-3"><i class="fab fa-facebook"></i></a>
 				</span>
 			</p>
       	</div>
@@ -31,7 +31,7 @@ export const generateMainContentHTML = content => {
       		<div class="row flex-lg-row align-items-center g-5 py-5">
 				<div class="col-12 col-sm-6  ">
 				${createImage(
-					'images/spolek-with-flag.jpeg',
+					'images/spolek_with_flag_denoise.jpeg',
 					'Members with the flag',
 					700,
 					500

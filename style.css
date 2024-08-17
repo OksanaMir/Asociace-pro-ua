@@ -44,7 +44,6 @@ body {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-weight: 300;
 	font-optical-sizing: auto;
-	font-style: normal;
 	font-size: var(--font-size);
 	background-image: linear-gradient(
 		180deg,
@@ -53,10 +52,7 @@ body {
 		var(--footer-color)
 	);
 	background-repeat: no-repeat;
-	background-color: var(--bg-color);
 	color: var(--text-color);
-	padding: 0;
-	margin: 0;
 }
 
 .color-custom {
@@ -75,9 +71,6 @@ body {
 	box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3) !important;
 }
 
-.bg-shadow-lg {
-	box-shadow: 0 1rem 3rem rgba(black, 0.175) !important;
-}
 .header-bg {
 	background-color: var(--cream-yellow);
 }
@@ -115,10 +108,8 @@ body {
 .nav-item .dropdown-menu {
 	top: 100%;
 	right: 0 !important;
-	transform: translateY(0);
-	/* Ensure there's no additional offset */
-	will-change: transform;
-	/* Optimize performance */
+	transform: translateY(0); /* Ensure there's no additional offset */
+	will-change: transform; /* Optimize performance */
 }
 
 /* end of my styles */
@@ -132,13 +123,13 @@ body {
 }
 .navbar-toggler,
 .navbar-toggler:focus,
-navbar-toggler:active,
-navbar-toggler-icon:focus {
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
 	outline: none;
 	box-shadow: none;
 	border: 0;
 }
-navbar-toggler span {
+.navbar-toggler span {
 	margin: 0;
 	padding: 0;
 }
@@ -221,23 +212,16 @@ navbar-toggler span {
 	background-color: var(--cream-yellow);
 }
 #backToTop {
-	background-color: var(--sky-blue);
-	opacity: 0.2;
+	background-color: rgba(204, 229, 255, 0.41);
 	border-color: var(--gray-color);
 	color: var(--gray-color);
-	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 1000;
-	border-width: 2px;
-	border-style: solid;
 }
 
 #backToTop:hover {
 	background-color: var(--font-color);
+	opacity: 1;
 }
 .motto {
 	background-image: linear-gradient(
@@ -258,26 +242,11 @@ navbar-toggler span {
 	overflow: hidden;
 }
 
-.slideLine {
-	padding: 20px;
-	font-size: 1.5em !important;
-	font-weight: 800;
-}
-.anouncement {
-	/* font-size: var(--font-size); */
-
-	color: var(--font-color);
-}
 .anouncement a:hover,
 .card:hover a,
 .header-nav:hover {
-	/* font-size: var(--font-size); */
-
 	color: var(--bg-color) !important;
 }
-/* .anouncement a:hover {
-	font-size: larger;
-} */
 
 h2::before {
 	content: 'm';
@@ -348,22 +317,16 @@ h2::before {
 
 @media (min-width: 600px) {
 	/*Tablet */
-	.flag {
-		width: 80%;
-	}
 	.main {
 		max-width: 95%;
-		/* margin-inline: auto; */
 	}
 	.slideLine {
 		animation: slidingText 6s linear 1 running;
 		white-space: nowrap;
 	}
 	.anouncement {
-		display: block;
 		text-align: left;
 		width: 100%;
-		/* font-size: var(--font-size); */
 		animation: slidingEnds 6s linear 6s 1;
 		color: var(--font-color);
 	}
@@ -404,25 +367,15 @@ h2::before {
 
 @media (min-width: 960px) {
 	/* Laptop */
-	.flag {
-		width: 70%;
-		/* min-width: 460px; */
-	}
 	.main {
 		max-width: 90%;
-		/* margin-inline: auto; */
 	}
 }
 
 @media (min-width: 1280px) {
 	/*Desktop */
-	.flag {
-		width: 60%;
-		/* min-width: 460px; */
-	}
 	.main {
 		max-width: 80%;
-		/* margin-inline: auto; */
 	}
 }
 @media (min-width: 1700px) {

@@ -6,14 +6,14 @@ export const generateMainContentHTML = content => {
 		return;
 	}
 	const mottoSection = `
-    <section class="mx-0 bg-shadow-lg rounded mb-5">
+    <section class="shadow mx-0 mb-5 bg-body-tertiary rounded">
     	<div class="motto d-xl-flex position-relative">
 			<div class="p-4 fst-italic pangolin-regular">
 				<h2 class="display-3 fw-bold lh-2 text-left ms-xl-5">Pro UA</h2>
 				<h3 id="site-motto" class="display-5 lh-2 text-right p-0 ">${content.motto}</h3>
         	</div>
-		  	<p class='slideLine text-center mb-0 mb-0 position-absolute bottom-0 w-100'>
-			<span class="anouncement bottom-0"> 
+		  	<p class='slideLine color-custom fw-bolder fs-2 text-center p-4 mb-0 mb-0 position-absolute bottom-0 w-100'>
+			<span class="anouncement fw-bolder bottom-0 d-block"> 
 				${content.slidingText} <i class="fas fa-hand-point-right"></i> <a href="https://www.instagram.com/zenskyj_klub?igsh=amp6Z3pnenJybjNo&utm_source=qr"
                 class="text-reset mx-3"><i class="fab fa-instagram"></i></a><a href=""
                 class="text-reset mx-3"><i class="fab fa-facebook"></i></a>
@@ -52,7 +52,7 @@ export const generateMainContentHTML = content => {
 					</div>
 			</div>
     	`,
-		'mx-0 '
+		'mx-0'
 	);
 
 	const missionSection = createSection(
@@ -74,15 +74,14 @@ export const generateMainContentHTML = content => {
         		</div>
       		</div>
     	`,
-		'color-custom mx-0 '
+		'color-custom mx-0'
 	);
 
 	const activitiesSection = createSection(
 		'activities',
 		content.activities.header,
 		`
-			<div class="row">
-				<div class="col-12">
+				<div class="col-12 p-4">
 					<ul class="list-unstyled mx-auto p-2 ">
 						<li>
 							<ul>
@@ -121,15 +120,14 @@ export const generateMainContentHTML = content => {
 						</button>
         			</div>
       			</div>
-	  		</div>
     `,
-		'color-custom'
+		'color-custom p-0'
 	);
 
 	const contactSection = createSection(
 		'contact',
 		content.contacts.header,
-		`<div>
+		`<div class="row align-items-center py-5 px-2">
 			<p><strong><i class="fas fa-file-contract"></i> ${content.orgId.header}: ${
 			content.orgId.body
 		}</strong></p>
@@ -141,7 +139,9 @@ export const generateMainContentHTML = content => {
 			</p>
 			<p><strong><i class="fas fa-envelope"></i> ${
 				content.contacts.email.header
-			}: </strong> ${content.contacts.email.body}
+			}: </strong> <a href="mailto:asociaceproua@gmail.com" class="link-secondary link-underline-light mx-2">${
+			content.contacts.email.body
+		}</a>
 			</p>
 			<p><strong><i class="fas fa-phone"></i> ${
 				content.contacts.phone.header
@@ -177,7 +177,7 @@ export const generateMainContentHTML = content => {
 			</ul>
 		</div>
 		`,
-		'color-custom mx-0 '
+		'color-custom mx-0'
 	);
 	const partnersSection = createSection(
 		'partners',
@@ -201,7 +201,7 @@ export const generateMainContentHTML = content => {
 		'color-custom mx-0'
 	);
 	const backToTopBtn = `
-	<button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">
+	<button id="backToTop" class="btn btn-outline-primary rounded-circle position-fixed bottom-50 end-0 m-4 z-3 d-flex align-items-center justify-content-center d-none">
 		<i class="fas fa-chevron-up"></i>
 	</button> `;
 
@@ -211,10 +211,3 @@ export const generateMainContentHTML = content => {
 	
 	`;
 };
-{
-	/* <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-  <path d="m7.247 4.86-4.796 5.481c-.566.646-.106 1.659.753 1.659h9.592c.86 0 1.32-1.013.753-1.659L8.753 4.86c-.566-.646-1.513-.646-2.006 0z"/>
-</svg>
-</button> */
-}

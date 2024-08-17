@@ -10,8 +10,12 @@ export const createNavLinks = links =>
 		.join('');
 
 export const createSection = (id, title, content, additionalClasses = '') => `
-  <section id="${id}" class="${id} mb-4 p-4 ${additionalClasses}">
-    <h2 class="display-4 fw-bold lh-2 mb-3 color-custom">${title}</h2>
+  <section id="${id}" class="${id} mb-4 ${
+	id !== 'activities' ? 'px-4' : ''
+} ${additionalClasses}">
+    <h2 class="display-4 fw-bold lh-2 mb-3 color-custom ${
+		id === 'activities' ? 'px-4' : ''
+	}">${title}</h2>
     ${content}
   </section>
 `;

@@ -220,6 +220,25 @@ navbar-toggler span {
 .main {
 	background-color: var(--cream-yellow);
 }
+#backToTop {
+	background-color: var(--sky-blue);
+	opacity: 0.2;
+	border-color: var(--gray-color);
+	color: var(--gray-color);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	border-width: 2px;
+	border-style: solid;
+}
+
+#backToTop:hover {
+	background-color: var(--font-color);
+}
 .motto {
 	background-image: linear-gradient(
 			var(--azure-blue),
@@ -256,9 +275,9 @@ navbar-toggler span {
 
 	color: var(--bg-color) !important;
 }
-.link-icon {
-	/* animation: zoomIn 2s linear 8s 1;  animation: 3s linear 1s infinite running slidein; */
-}
+/* .anouncement a:hover {
+	font-size: larger;
+} */
 
 h2::before {
 	content: 'm';
@@ -409,5 +428,11 @@ h2::before {
 @media (min-width: 1700px) {
 	.main {
 		max-width: 60%;
+	}
+}
+@media (prefers-reduced-motion) {
+	.anouncement,
+	.slideLine {
+		animation: none;
 	}
 }

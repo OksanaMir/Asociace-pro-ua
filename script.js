@@ -98,4 +98,24 @@ document.addEventListener('DOMContentLoaded', () => {
 	loadContent(initialLang);
 
 	console.log(`Current screen type: ${getScreenType()}`);
+	const backToTopButton = mainElm.querySelector('#backToTop');
+	console.log(backToTopButton);
+
+	// Show button when the header is outside the viewport
+	window.addEventListener('scroll', () => {
+		console.log(window.scrollY);
+		if (window.scrollY > document.querySelector('header').offsetHeight) {
+			backToTopButton.classList.remove('d-none');
+		} else {
+			backToTopButton.classList.add('d-none');
+		}
+	});
+
+	// Scroll to top behavior
+	backToTopButton.addEventListener('click', () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	});
 });

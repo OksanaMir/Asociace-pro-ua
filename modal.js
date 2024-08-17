@@ -41,11 +41,15 @@ export const generateModalHTML = content => {
                         <strong>oddíl</strong>, vložka L 9426
                     </p>
                     <hr>
-                    <p><strong>Název:</strong> Asociace ProUA Jižní Čechy, z.s.</p>
-                    <p><strong>Sídlo:</strong> [Vaše Adresa], České Budějovice 2, 370 11 České Budějovice</p>
+                    <p><strong>${content.name.header}:</strong> ${
+		content.name.body
+	}</p>
+                    <p><strong>${content.legalAddress.header}:</strong> ${
+		content.legalAddress.body
+	}</p>
                     <hr>
                     ${createModalSections(bodySections)}
-                    <p><strong>Počet členů:</strong> 1</p>
+                    <p><strong>Počet členů:</strong>...</p>
                     <p><strong>Způsob jednání:</strong> Předseda zastupuje Asociaci samostatně.</p>
                     <hr>
                     <p><strong>Kontrolní orgán:</strong></p>

@@ -8,9 +8,9 @@ export const generateMainContentHTML = content => {
 	const mottoSection = `
     <section class="mx-0 bg-shadow-lg rounded mb-5">
     	<div class="motto d-xl-flex position-relative">
-			<div class="d-lg-flex flex-column p-4 fst-italic w-50 pangolin-regular">
+			<div class="p-4 fst-italic pangolin-regular">
 				<h2 class="display-3 fw-bold lh-2 text-left ms-xl-5">Pro UA</h2>
-				<h3 id="site-motto" class="display-5 lh-2 text-right p-0 me-xl-5">${content.motto}</h3>
+				<h3 id="site-motto" class="display-5 lh-2 text-right p-0 ">${content.motto}</h3>
         	</div>
 		  	<p class='slideLine text-center mb-0 mb-0 position-absolute bottom-0 w-100'>
 			<span class="anouncement bottom-0"> 
@@ -161,7 +161,7 @@ export const generateMainContentHTML = content => {
 								},
 								{
 									socName: 'Facebook',
-									href: '[Facebook Link]'
+									href: 'https://www.facebook.com/profile.php?id=61563289276670'
 								}
 							].map(
 								elm =>
@@ -200,9 +200,21 @@ export const generateMainContentHTML = content => {
 		</div>`,
 		'color-custom mx-0'
 	);
+	const backToTopBtn = `
+	<button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">
+		<i class="fas fa-chevron-up"></i>
+	</button> `;
 
 	return `
-	${mottoSection}${aboutSection}${missionSection}${activitiesSection}${contactSection}${partnersSection}
+	${mottoSection}${aboutSection}${missionSection}${activitiesSection}${contactSection}${partnersSection}${backToTopBtn}
 	<!-- Other sections as needed -->
+	
 	`;
 };
+{
+	/* <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+  <path d="m7.247 4.86-4.796 5.481c-.566.646-.106 1.659.753 1.659h9.592c.86 0 1.32-1.013.753-1.659L8.753 4.86c-.566-.646-1.513-.646-2.006 0z"/>
+</svg>
+</button> */
+}

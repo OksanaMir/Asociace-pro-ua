@@ -29,11 +29,11 @@ export const content = {
 			'Asociace ProUA Jižní Čechy je registrována u Krajského soudu v Českých Budějovicích, spisová značka L, vložka 9426. Pro podrobné právní informace navštivte',
 		founded: {
 			header: 'Datum vzniku',
-			body: '[Datum]'
+			body: '2024'
 		},
 		foundationDate: {
 			header: 'Datum vzniku a zápisu',
-			body: '[Datum]'
+			body: '2024'
 		},
 		orgId: {
 			header: 'Identifikační číslo',
@@ -109,7 +109,7 @@ export const content = {
 			},
 			email: {
 				header: 'Email',
-				body: '[Váš email]'
+				body: 'asociaceproua@gmail.com'
 			},
 			phone: {
 				header: 'Telefon',
@@ -139,6 +139,26 @@ export const content = {
 					name: 'Klub nových komunikací',
 					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU ',
 					img: 'images/new-com-club.jpeg'
+				},
+				{
+					name: 'Квітка Карпат України',
+					link: 'https://www.facebook.com/profile.php?id=61564220014857',
+					img: 'images/kvitka-karpat.jpg'
+				},
+				{
+					name: 'Ukrajinsko-české dětské centrum "VŠESVIT"',
+					link: 'https://www.facebook.com/profile.php?id=61550972161859',
+					img: 'images/vsesvit-deti.jpg'
+				},
+				{
+					name: 'Společně udržme demokracii',
+					link: 'https://www.facebook.com/spoludem',
+					img: 'images/spolecne-democrat.jpg'
+				},
+				{
+					name: 'VESNA - ženský vzdělávací spolek',
+					link: 'https://www.facebook.com/spolekVesna',
+					img: 'images/vesna.jpg'
 				}
 			]
 		}
@@ -173,11 +193,11 @@ export const content = {
 			'Asociace ProUA Jižní Čechy is registered under the jurisdiction of the Regional Court in České Budějovice, file L, insert 9426. For detailed legal information, visit',
 		founded: {
 			header: 'Date of Establishment',
-			body: '[Date]'
+			body: '2024'
 		},
 		foundationDate: {
 			header: 'Date of Establishment and Registration',
-			body: '[Date]'
+			body: '2024'
 		},
 		orgId: {
 			header: 'Identification Number',
@@ -185,7 +205,7 @@ export const content = {
 		},
 		legalAddress: {
 			header: 'Registered Office',
-			body: ' [Address], České Budějovice 2, 370 11 České Budějovice'
+			body: '370 11 České Budějovice'
 		},
 		highAuth: {
 			header: 'Name of the Highest Authority',
@@ -197,7 +217,7 @@ export const content = {
 		},
 		chairman: {
 			header: 'Chairman',
-			body: `Mgr. VALERIYA JURIJIVNA ZABELINA, Ph.D, date of Birth: [Date]<br>[Address], České Budějovice 2, 370 11 České Budějovice`
+			body: `Mgr. VALERIYA JURIJIVNA ZABELINA, Ph.D, <br> 370 11 České Budějovice`
 		},
 		rights: 'All rights reserved.',
 		about: 'About us',
@@ -252,7 +272,10 @@ export const content = {
 				header: 'Address',
 				body: '370 11 České Budějovice, Czech Republic'
 			},
-			email: { header: 'Email', body: '[Your email]' },
+			email: {
+				header: 'Email',
+				body: 'asociaceproua@gmail.com'
+			},
 			phone: {
 				header: 'Phone',
 				body: '[Your phone number]'
@@ -281,6 +304,26 @@ export const content = {
 					name: 'Klub nových komunikací',
 					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU ',
 					img: 'images/new-com-club.jpeg'
+				},
+				{
+					name: 'Квітка Карпат України',
+					link: 'https://www.facebook.com/profile.php?id=61564220014857',
+					img: 'images/kvitka-karpat.jpg'
+				},
+				{
+					name: 'Ukrajinsko-české dětské centrum "VŠESVIT"',
+					link: 'https://www.facebook.com/profile.php?id=61550972161859',
+					img: 'images/vsesvit-deti.jpg'
+				},
+				{
+					name: 'Společně udržme demokracii',
+					link: 'https://www.facebook.com/spoludem',
+					img: 'images/spolecne-democrat.jpg'
+				},
+				{
+					name: 'VESNA - ženský vzdělávací spolek',
+					link: 'https://www.facebook.com/spolekVesna',
+					img: 'images/vesna.jpg'
 				}
 			]
 		}
@@ -315,11 +358,11 @@ export const content = {
 			'Асоціація ProUA Jižní Čechy зареєстрована під юрисдикцією Регіонального суду в Чеських Будейовицях, справа L, вставка 9426. Для отримання детальної правової інформації відвідайте',
 		founded: {
 			header: 'Дата заснування',
-			body: '[Дата]'
+			body: '2024'
 		},
 		foundationDate: {
 			header: 'Дата створення та реєстрації',
-			body: '[Дата]'
+			body: '2024'
 		},
 
 		orgId: {
@@ -328,7 +371,7 @@ export const content = {
 		},
 		legalAddress: {
 			header: 'Юридична адреса',
-			body: '[Адреса], 370 11 České Budějovice'
+			body: '370 11 České Budějovice'
 		},
 		highAuth: {
 			header: 'Назва найвищого органу',
@@ -396,7 +439,7 @@ export const content = {
 			},
 			email: {
 				header: 'Email',
-				body: '[Ваш email]'
+				body: 'asociaceproua@gmail.com'
 			},
 			phone: {
 				header: 'Телефон',
@@ -426,6 +469,26 @@ export const content = {
 					name: 'Klub nových komunikací',
 					link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fklub.nk_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1_c1HGVXQMfes-ZzQ9HC59pboZw6LFGKkyIWytXhbmjFTj8i5j9QMOkzQ_aem_dDog3z1BMJ-g92HBOIkdOQ&h=AT3s0wxuueX61tAg__BMgmzUBDXrmk96IzggCvGu76CR-1UMJXGlwDB_ZQq_YoBmqamuYERHRtdZoTJGxk33LGMbvsCZM2IX9t56OARl-FdKZgG0FjYA34XGHRKya0GX3RSyxenOegF2-Wok250199-BMKU ',
 					img: 'images/new-com-club.jpeg'
+				},
+				{
+					name: 'Квітка Карпат України',
+					link: 'https://www.facebook.com/profile.php?id=61564220014857',
+					img: 'images/kvitka-karpat.jpg'
+				},
+				{
+					name: 'Ukrajinsko-české dětské centrum "VŠESVIT"',
+					link: 'https://www.facebook.com/profile.php?id=61550972161859',
+					img: 'images/vsesvit-deti.jpg'
+				},
+				{
+					name: 'Společně udržme demokracii',
+					link: 'https://www.facebook.com/spoludem',
+					img: 'images/spolecne-democrat.jpg'
+				},
+				{
+					name: 'VESNA - ženský vzdělávací spolek',
+					link: 'https://www.facebook.com/spolekVesna',
+					img: 'images/vesna.jpg'
 				}
 			]
 		}

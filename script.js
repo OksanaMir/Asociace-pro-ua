@@ -3,6 +3,14 @@ import { generateModalHTML } from './modal.js';
 import { generateMainContentHTML } from './content.js';
 import { createNavLinks } from './utils.js';
 
+// Ensure ?lang=cs is present on first load if no lang is set
+const params = new URLSearchParams(window.location.search);
+if (!params.has('lang')) {
+	params.set('lang', 'cs');
+	window.location.search = params.toString();
+	// The page will reload with ?lang=cs in the URL
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	const getScreenType = () => {
 		if (window.innerWidth < 600) return 'mobile';
@@ -36,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	const langBtn = document.getElementById('languageDropdown');
 
 	let langMode = '';
+	// add storing the chosen language logic. If saved lang exists, the page will be in chosen lang.
+	const savedLang = localStorage.getItem('lang');
+	let currentLang = savedLang || mainElm.dataset.lang || 'cs';
 
 	const loadContent = lang => {
 		let content = data[lang];
@@ -86,6 +97,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		e.preventDefault();
 		if (e.target.tagName === 'A') {
 			const lang = e.target.getAttribute('data-lang');
+			localStorage.setItem('lang', lang); // Save user's choice for language
+			// In your language switch event handler:
+			const params = new URLSearchParams(window.location.search);
+			params.set('lang', lang);
+			window.history.pushState(
+				{},
+				'',
+				`${window.location.pathname}?${params}`
+			);
 			loadContent(lang);
 		}
 	});
@@ -94,7 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	const initialLang =
 		document
 			.querySelector('#languageDropdown + .dropdown-menu a.active')
-			?.getAttribute('data-lang') || LANG_CS;
+			?.getAttribute('data-lang') ||
+		currentLang ||
+		LANG_CS; //add storing chosen language logic. If saved lang exists, the page will be in chosen lang.
 	loadContent(initialLang);
 
 	console.log(`Current screen type: ${getScreenType()}`);

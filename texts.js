@@ -113,7 +113,7 @@ export const content = {
 			},
 			phone: {
 				header: 'Telefon',
-				body: '[Telefonní číslo]'
+				body: '+420 777 233 176'
 			},
 			social: 'Sledujte nás'
 		},
@@ -278,7 +278,7 @@ export const content = {
 			},
 			phone: {
 				header: 'Phone',
-				body: '[Your phone number]'
+				body: '+420 777 233 176'
 			},
 			social: 'Follow us: '
 		},
@@ -443,7 +443,7 @@ export const content = {
 			},
 			phone: {
 				header: 'Телефон',
-				body: '[Ваш номер телефону]'
+				body: '+420 777 233 176'
 			},
 			social: 'Слідкуйте за нами'
 		},

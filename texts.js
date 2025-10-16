@@ -53,7 +53,7 @@ export const content = {
 		},
 		chairman: {
 			header: 'Předseda',
-			body: `Mgr. VALERIJA JURIJIVNA ZABELINA, Ph.D., dat. nar. [Datum],br>[Adresa], České Budějovice 2, 370 11 České Budějovice<br>Den vzniku funkce: [datum]`
+			body: `Mgr. VALERIA ZABELINA, Ph.D., dat. nar. [Datum],br>[Adresa], České Budějovice 2, 370 11 České Budějovice<br>Den vzniku funkce: [datum]`
 		},
 		rights: 'Všechna práva vyhrazena.',
 		purpose: {
@@ -217,7 +217,7 @@ export const content = {
 		},
 		chairman: {
 			header: 'Chairman',
-			body: `Mgr. VALERIYA JURIJIVNA ZABELINA, Ph.D, <br> 370 11 České Budějovice`
+			body: `Mgr. VALERIA ZABELINA, Ph.D, <br> 370 11 České Budějovice`
 		},
 		rights: 'All rights reserved.',
 		about: 'About us',

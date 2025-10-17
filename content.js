@@ -95,6 +95,7 @@ export const generateMainContentHTML = content => {
 						<div class="carousel-inner">
 							${[
 								'images/castle.png',
+								'images/kotva.png',
 								'images/rafts-group.png',
 								'images/praying.jpeg',
 								'images/with-military.jpeg',

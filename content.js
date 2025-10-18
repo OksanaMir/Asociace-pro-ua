@@ -94,7 +94,7 @@ export const generateMainContentHTML = content => {
 					<div id="carouselControls" class="photobox carousel slide" data-bs-touch="false">
 						<div class="carousel-inner">
 							${[
-								'images/kotvaě.jpeg',
+								'images/kotva2.jpeg',
 								'images/castle.png',
 								'images/kotva.png',
 								'images/rafts-group.png',

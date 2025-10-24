@@ -224,7 +224,10 @@ body {
 	opacity: 1;
 }
 .motto {
-	background-image: linear-gradient(
+	background-image: 
+		url(images/people_on_square_monochrome.jpeg),
+		url(/images/people_on_square_monochrome.jpeg),
+		linear-gradient(
 			var(--azure-blue),
 			var(--medium-blue),
 			var(--sky-blue),
@@ -232,11 +235,10 @@ body {
 			var(--pale-yellow),
 			var(--light-yellow),
 			var(--gold-yellow)
-		),
-		url(images/people_on_square_monochrome.jpeg),
-		url(/images/people_on_square_monochrome.jpeg);
+		);
 	background-position: center center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat, no-repeat;
+	background-blend-mode: multiply;
 	background-size: cover;
 	height: 600px;
 	color: aliceblue;

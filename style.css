@@ -237,8 +237,7 @@ body {
 		url(images/people_on_square_monochrome.jpeg),
 		url(/images/people_on_square_monochrome.jpeg);
 	background-position: center center;
-	background-repeat: no-repeat, no-repeat;
-	background-blend-mode: multiply;
+	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
 	color: aliceblue;

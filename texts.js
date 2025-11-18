@@ -159,6 +159,11 @@ export const content = {
 					name: 'VESNA - ženský vzdělávací spolek',
 					link: 'https://www.facebook.com/spolekVesna',
 					img: 'images/vesna.jpg'
+				},
+				{
+					name: 'Future for Ukraine - neziskový nadační fond',
+					link: 'https://futureforukraine.eu',
+					img: 'images/future-for-ukraine.jpg'
 				}
 			]
 		}
@@ -324,6 +329,11 @@ export const content = {
 					name: 'VESNA - ženský vzdělávací spolek',
 					link: 'https://www.facebook.com/spolekVesna',
 					img: 'images/vesna.jpg'
+				},
+				{
+					name: 'Future for Ukraine - neziskový nadační fond',
+					link: 'https://futureforukraine.eu',
+					img: 'images/future-for-ukraine.jpg'
 				}
 			]
 		}
@@ -489,6 +499,11 @@ export const content = {
 					name: 'VESNA - ženský vzdělávací spolek',
 					link: 'https://www.facebook.com/spolekVesna',
 					img: 'images/vesna.jpg'
+				},
+				{
+					name: 'Future for Ukraine - neziskový nadační fond',
+					link: 'https://futureforukraine.eu',
+					img: 'images/future-for-ukraine.jpg'
 				}
 			]
 		}
